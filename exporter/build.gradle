@@ -1,0 +1,19 @@
+plugins {
+    id 'groovy'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.groovy:groovy:5.0.6'
+    implementation 'com.codeborne:selenide:7.16.2'
+    implementation 'org.jsoup:jsoup:1.22.2'
+    implementation 'io.github.bonigarcia:webdrivermanager:6.3.4'
+}
+
+application {
+    mainClass = 'CmdChallengeExporter'
+}
