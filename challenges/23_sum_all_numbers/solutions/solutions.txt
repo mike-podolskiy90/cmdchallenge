@@ -1,0 +1,50 @@
+awk 'BEGIN {sum=0} {sum += $1} END {print sum}' sum-me.txt
+awk '{sum += $1} END {print sum}' sum-me.txt
+jq -s add *
+awk '{s+=$1} END {print s}' sum-me.txt
+paste -sd+ sum-me.txt | bc
+awk '{sum+=$1} END {print sum}' sum-me.txt
+jq -s add sum-me.txt
+cat sum-me.txt | paste -sd+ | bc
+for i in `cat sum-me.txt`; do sum=$(($sum + $i)); done; echo $sum
+awk '{ sum += $1 } END { print sum }' sum-me.txt
+cat sum-me.txt | paste -sd+ - | bc
+paste -sd '+' sum-me.txt | bc
+awk '{sum+=$0} END {print sum}' sum-me.txt
+sum=0; while read n; do sum=$[ sum + n ]; done < <(cat sum-me.txt); echo $sum
+awk '{s+=$1} END{print s}' sum-me.txt
+awk 'BEGIN {sum = 0} {sum += $1} END {print sum}' sum-me.txt
+awk '{s += $1} END {print s}' sum-me.txt
+awk '{sum+=$1} END{print sum}' sum-me.txt
+awk 'BEGIN {sum=0} {sum+=$1} END {print sum}' sum-me.txt
+awk '{sum +=$1} END {print sum}' sum-me.txt
+for i in `cat sum-me.txt`; do sum=$(($sum + $i)) ; done; echo $sum
+cat sum-me.txt | paste -sd+ - |bc
+cat sum-me.txt | paste -sd "+" | bc
+cat sum-me.txt | awk '{sum += $1} END {print sum}'
+sum=0; while read n; do sum=$((sum+n)); done < sum-me.txt; echo $sum
+cat sum-me.txt|paste -sd+|bc
+paste -s -d + sum-me.txt | bc
+cat sum-me.txt | paste -s -d + | bc
+awk '{s=s+$1}END{print s}' sum-me.txt
+awk '{sum += $0} END {print sum}' sum-me.txt
+awk '{total += $1} END {print total}' sum-me.txt
+awk 'BEGIN {sum=0}; {sum += $1}; END {print sum}' sum-me.txt
+sum=0; cat sum-me.txt | while read n; do sum=$[ sum + n ]; echo $sum; done | tail -1
+cat sum-me.txt | paste -s -d+ | bc
+awk '{sum+=$1}END{print sum}' sum-me.txt
+awk '{sum += $1 } END {print sum}' sum-me.txt
+awk '{suma += $1} END {print suma}' sum-me.txt
+sum=0;while read n; do sum=$[ sum + n ]; done < <(cat sum-me.txt); echo $sum
+paste -sd + sum-me.txt | bc
+paste -s -d+ sum-me.txt | bc
+cat sum-me.txt | awk '{s+=$1} END {print s}'
+sum=0;while read num; do sum=$((sum + num)); done < sum-me.txt; echo $sum
+cat sum-me.txt | paste -sd+ - | bc
+echo `cat sum-me.txt`|sed 's/ /+/g'|bc
+awk '{n+=$1}; END{print n}' sum-me.txt
+awk '{SUM+=$0} END {print SUM}' sum-me.txt
+cat sum-me.txt | awk '{a+=$1} END {print a}'
+awk '{suma=suma+$1} END {print suma}' sum-me.txt
+cat sum-me.txt | awk '{sum+=$1} END {print sum}'
+awk 'BEGIN {suma = 0} {suma += $1} END {print suma}' sum-me.txt

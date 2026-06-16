@@ -1,0 +1,50 @@
+cat split-me.txt | tr ';' '\n'
+tr ';' '\n' < split-me.txt
+cat split-me.txt | tr ";" "\n"
+sed 's/;/\n/g' split-me.txt
+tr ";" "\n" < split-me.txt
+cat split-me.txt | tr ';' $'\n'
+cat split-me.txt | sed 's/;/\n/g'
+sed "s/;/\n/g" split-me.txt
+grep -o [0-9]* split-me.txt
+cat split-me.txt | tr ';' "\n"
+cat split-me.txt | tr ";" '\n'
+cat split-me.txt | sed "s/;/\n/g"
+cat split-me.txt|tr ';' '\n'
+awk -F ";" '{for(i=1;i<=NF;i++)print $i}' split-me.txt
+awk -F';' '{for(i=1;i<=NF;i++) print $i}' split-me.txt
+cat * | tr ';' '\n'
+cat "split-me.txt" | tr ";" "\n"
+tr ";" "\n" <split-me.txt
+cat split-me.txt |tr ';' "\n"
+cat split-me.txt |tr ';' '\n'
+tr ";" '\n' < split-me.txt
+cat split-me.txt| tr ';' '\n'
+cat split-me.txt | tr ";" "\n"
+cat split-me.txt | tr ';' '\n'
+awk -v RS=';' '{print $1}' split-me.txt
+tr ';' '\n' <split-me.txt
+cat split-me.txt | tr \; \\n
+sed 's/;/\n/g' "split-me.txt"
+cat split-me.txt |tr ";" "\n"
+sed -e 's/;/\n/g' split-me.txt
+cat split-me.txt | tr ";" "\n"
+cat split-me.txt | sed s/\;/\\n/g
+cat split-me.txt | grep -o [0-9]*
+cat split-me.txt | tr -s ';' '\n'
+cat ./split-me.txt | sed s/\;/\\n/g
+cat split-me.txt | grep -oE "[^;]+"
+tr < split-me.txt ";" "\n"
+cat split-me.txt | tr \; "\n"
+cat split-me.txt | tr ';' \\n
+sed 's/\;/\n/g' "split-me.txt"
+tr ';' '\n'<split-me.txt
+tr ';' "\n" < split-me.txt
+grep -oP '\d+' split-me.txt
+sed 's/;/\n/g' split-me.txt
+cat split-me.txt|tr ";" "\n"
+sed 's/\;/\n/g' split-me.txt
+sed "s/;/\n/g" < split-me.txt
+grep -oE "[^;]+" split-me.txt
+sed 's/;/\n/g' < split-me.txt
+tr ';' '\n' < split-me.txt

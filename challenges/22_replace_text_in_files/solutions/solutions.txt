@@ -1,0 +1,51 @@
+find . -type f -name "*.txt" -exec sed -i 's/challenges are difficult//g' {} +
+rm -rf **/*.txt
+find . -name "*.txt" -exec sed -i 's/challenges are difficult//g' {} +
+sed -i 's/challenges are difficult//g' **/*.txt
+find . -type f -name "*.txt" -exec sed -i 's/challenges are difficult//g' {} \;
+sed -i "challenges are difficult" **/*.txt
+find . -name "*.txt" -exec sed -i 's/challenges are difficult//g' {} \;
+find . -type f -name '*.txt' -exec sed -i 's/challenges are difficult//g' {} +
+find . -type f -name "*.txt" -exec sed -i 's/challenges are difficult//g' {} +
+ rm -rf **/*.txt
+sed -i "s/challenges are difficult//g" **/*.txt
+find . -type f -name "*.txt" -exec sed -i "s/challenges are difficult//g" {} +
+find . -name '*.txt' -exec sed -i 's/challenges are difficult//g' {} \;
+find . -name "*.txt" -type f -delete
+sed -i 'challenge are difficult/d' **/*.txt
+sed -i 'challenges are difficult/d' **/*.txt
+sed -i '/challenges are difficult/d' **/*.txt
+find . -type f -name '*.txt' -exec sed -i 's/challenges are difficult//g' {} \;
+find . -name "*.txt" -exec sed -i "s/challenges are difficult//g" {} +
+find -type f -name "*.txt" -exec sed -i 's/challenges are difficult//g' {} \;
+find . -type f -name "*.txt" -exec sed -i "s/challenges are difficult//g" {} \;
+find . -name "*.txt" -type f -exec sed -i 's/challenges are difficult//g' {} +
+sed -i 'challenges are difficult' **/*.txt
+find . -name "*.txt" -type f -exec sed -i 's/challenges are difficult//g' {} \;
+find . -name "*.txt" -delete
+find . -name "*.txt" -exec sed -i '/challenges are difficult/d' {} +
+find . -name '*.txt' -exec sed -i 's/challenges are difficult//g' {} +
+sed -i "challenges are difficult/d" **/*.txt
+find . -name "*.txt" -exec sed -i "s/challenges are difficult//g" {} \;
+find -type f -name "*.txt" -exec sed -i 's/challenges are difficult//g' {} +
+find . -type f -name "*.txt" -exec sed -i s/"challenges are difficult"//g {} +
+find . -type f -name "*.txt" -delete
+find . -name "*.txt" -exec sed -i "challenges are difficult" {} \;
+find -name "*.txt" -exec sed -i 's/challenges are difficult//g' {} +
+find . -name "*.txt" -print0 | xargs -0 sed -i 's/challenges are difficult//g'
+find -name "*.txt" -type f -delete
+sed 'challenges are difficult' -i **/*.txt
+find . -type f -name "*.txt" -print0 | xargs -0 sed -i 's/challenges are difficult//g'
+sed -i 's/challenges//g' **/*.txt
+sed -i "/challenges are difficult/d" **/*.txt
+find * -type f -name "*.txt" -exec sed -i 's/challenges are difficult//g' {} +
+sed -i "challenges are dfficult" **/*.txt
+sed -i 'challenge are difficult' '' **/*.*
+sed -i 'challenges are difficult' '' **/*.*
+sed -i 's/challenges are difficult//g' **/**.txt
+find -name "*.txt" -exec sed -i 's/challenges are difficult//g' {} \;
+find . -type f -name "*.txt" -exec sed -i '/challenges are difficult/d' {} +
+find . -type f -name '*txt' -exec sed -i 's/challenges are difficult//g' {} +
+find . -name "*.txt" -type f -exec sed -i "s/challenges are difficult//g" {} +
+sed -i 'challenges are difficult' **/*.*
+sed 's/challenges are difficult//g' -i **/*.txt

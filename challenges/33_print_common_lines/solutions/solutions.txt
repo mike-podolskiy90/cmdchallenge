@@ -1,0 +1,59 @@
+cat access.log.1 | awk '{print $1}' | sort -u | grep -of - access.log.2 | sort -u
+cat access* | awk '{print $1}' | sort | uniq -d
+cat access.log.* | awk '{print $1}' | sort | uniq -d
+comm -12 <(awk '{print $1}' access.log.1 | sort -u) <(awk '{print $1}' access.log.2 | sort -u)
+awk 's[$1]++{print $1}' access.log*
+awk 'seen[$1]++ {print $1}' *
+comm -12 <(awk '{print $1}' access.log.1 | sort) <(awk '{print $1}' access.log.2 | sort)
+cat access.log* | awk '{print $1}' | sort | uniq -d
+comm -12 <(cut -d' ' -f1 access.log.1 | sort -u) <(cut -d' ' -f1 access.log.2 | sort -u)
+awk 'seen[$1]++ {print $1}' access.log*
+awk '{print $1}' access.log.* | sort | uniq -d
+cat access.log.1 access.log.2 | awk '{print $1}' | sort | uniq -d
+comm -12 <(cut -d' ' -f1 access.log.1 | sort) <(cut -d' ' -f1 access.log.2 | sort)
+cat access* | awk '{print$1}' | sort | uniq -d
+awk '{print $1}' access.log.1 access.log.2 | sort | uniq -d
+comm -12 <(grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}' access.log.1 | sort -u) <(grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}' access.log.2 | sort -u)
+cat access* |awk '{print $1}' | sort | uniq -d
+cat access.log.{1,2} | cut -d' ' -f1 | sort | uniq -d
+cat access.log.1 access.log.2 | grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}' | sort | uniq -d
+cat access.log* | awk 'ip[$1]++ {print $1}'
+awk 's[$1]++ {print $1}' access.log*
+awk '{print $1}' access* | sort | uniq -d
+comm -12 <(grep -Eo '([0-9]{1,3}\.){3}[0-9]{1,3}' access.log.1 | sort -u) <(grep -Eo '([0-9]{1,3}\.){3}[0-9]{1,3}' access.log.2 | sort -u)
+awk 'a[$1]++ {print $1}' access.log.*
+awk '{print $1}' access.log* | sort | uniq -d
+cat access* | awk '{ print $1 }' | sort | uniq -d
+cat access.log.* | cut -d " " -f1 | sort | uniq -d
+awk 'a[$1]++ {print $1}' {access.log.1,access.log.2}
+grep -Fo -f <(cut -f1 -d' ' access.log.1) access.log.2
+cut -d' ' -f1 access.log.1 access.log.2 | sort | uniq -d
+cat access.log.1 | awk '{print $1}' | sort -u | grep -of - access.log.2
+cat access.log.1 |awk '{print $1}' | sort -u | grep -of - access.log.2 | sort -u
+comm -12 <(grep -ohE '([0-9]{1,3}\.){3}[0-9]{1,3}' access.log.1 | sort -u) <(grep -ohE '([0-9]{1,3}\.){3}[0-9]{1,3}' access.log.2 | sort -u)
+awk '{count[$1]++;count[$2]++} END{for (ip in count) if (count[ip] > 1) print ip}' <(paste <(cut -d- -f1 access.log.1 | sort -u) <(cut -d- -f1 access.log.2 | sort -u))
+grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}' access.log.1 | sort -u > ips1.txt
+ grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}' access.log.2 | sort -u > ips2.txt
+ comm -12 ips1.txt ips2.txt
+awk 's[$1]++ {print $1}' *
+cat access.log.* | awk 'seen[$1]++ {print $1}'
+cat access.log* | awk '{print $1}' | sort | uniq -d
+awk '{print $1}' access.log.1 | grep -of - access.log.2
+cat access.log.* | grep -o -P "^[^\s]*" | sort | uniq -d
+awk '{ print $1 }' access.log.1 | grep -of - access.log.2
+cat access.log.1 | awk '{print $1}' | grep -of - access.log.2
+cat access.log.1 | awk '{print $1}' |sort -u | grep -of - access.log.2 | sort -u
+grep -Fxf <(awk '{print $1}' access.log.1) <(awk '{print $1}' access.log.2) | sort -u
+grep -Fxf <(awk '{print $1}' access.log.1 | sort -u) <(awk '{print $1}' access.log.2 | sort -u)
+cat access.log.1 | grep -Eo "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" | sort -u | grep -of - access.log.2
+awk '{print $1}' access.log.1 | sort -u > ip1.txt
+ awk '{print $1}' access.log.2 | sort -u > ip2.txt
+ comm -12 ip1.txt ip2.txt
+comm -12 \
+ <(grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}' access.log.1 | sort -u) \
+ <(grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}' access.log.2 | sort -u)
+comm -12 <(grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" access.log.1 | sort -u) \
+ <(grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" access.log.2 | sort -u)
+grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}' access.log.1 | sort -u > ip1.txt
+ grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}' access.log.2 | sort -u > ip2.txt
+ comm -12 ip1.txt ip2.txt

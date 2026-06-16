@@ -1,0 +1,51 @@
+find . -name "-*" -delete
+rm -- -*
+rm ./-*
+find . -type f -name "-*" -delete
+find . -type f -name "-*" -exec rm {} +
+find . -type f -name '-*' -delete
+find -type f -name "-*" -delete
+find . -type f -name "-*" -exec rm {} \;
+rm -rf ./-*
+find . -name '-*' -delete
+find -name '-*' -delete
+rm -- ./-*
+find . -name "\-*" -delete
+find -type f -name '-*' -delete
+find . -maxdepth 1 -name "-*" -delete
+find . -type f -name '-*' -exec rm {} \;
+find . -maxdepth 1 -type f -name "-*" -delete
+find -name "-*" -delete
+find . -type f -name "-*" -exec rm {} \; && ls
+find -name "-*" -exec rm {} \;
+find . -name "-*" -exec rm {} \;
+find . -type f -name $'\-*' -delete
+find . -type f -name "-*" -exec rm {} \;
+find . -maxdepth 1 -type f -name '-*' -delete
+find . -type f \( -not -name "*.txt" -a -not -name "*.exe" \) -delete
+rm -f -- -*
+find ./ -name "-*" -delete
+rm $(find . -type f -name "-*")
+find -name '-*' -exec rm -f {} +
+find . -name "-*" -type f -delete
+find . -type f -name "\-*" -delete
+find . -type f -name "-*" -delete
+find . -maxdepth 1 -name '-*' -delete
+find -type f -a -name "-*" -exec rm {} \;
+find -type f ! -name '*.txt' -exec rm {} \;
+find . -type f ! -name "*.txt" ! -name "*.exe" -exec rm {} +
+find . -type f ! -name "*.txt" ! -name "*.exe" -exec rm {} ';'
+rm ./\-*
+rm -- \-*
+find . -name "\-*" | xargs rm
+find -name '-*' -exec rm {} +
+find -name "-*" -exec rm {} +
+find . -name "-*" -exec rm {} +
+find . -name '-*' -type f -delete
+find -name '-*' -exec rm -rf {} \;
+find . -type f -name "*-*" -delete
+find . -type f -iname "-*" -delete
+find . -name "-*" -delete
+ rm -- -*
+find . -type f -name '\-*' -exec rm {} \;
+find . -type f -name "-*" -exec rm -- {} +

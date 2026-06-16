@@ -1,0 +1,50 @@
+find -name "*.doc" -delete
+rm -rf **/*.doc
+find . -type f -name "*.doc" -delete
+find . -name "*.doc" -delete
+rm **/*.doc
+find . -name "*.doc" -type f -delete
+rm -r **/*.doc
+find . -name '*.doc' -delete
+find . -type f -name '*.doc' -delete
+find -type f -name "*.doc" -delete
+find -name '*.doc' -delete
+find . -type f -name "*.doc" -exec rm -f {} \;
+rm -f **/*.doc
+find . -type f -name "*.doc" -exec rm -f {} +
+find . -name "*.doc" -exec rm {} \;
+find . -type f -name "*.doc" -exec rm {} \;
+find . -name "*.doc" | xargs rm
+find -name "*.doc" -type f -delete
+rm **/**.doc
+rm -rf **/**.doc
+find -name "*doc" -delete
+find . -name '*.doc' -type f -delete
+rm **/*.doc -r
+rm -rf **/*doc
+find . type f -name "*.doc" -delete
+find ./ -name "*.doc" -delete
+find . -type f -iname "*.doc" -delete
+rm -fr **/*.doc
+find . -type f -name "*.doc" -exec rm {} +
+rm **/*doc
+rm -rf **/*.doc
+find . -iname "*.doc" -delete
+find -type f -name '*.doc' -delete
+find . -name "*.doc" -exec rm -rf {} \;
+rm -r ./**/*.doc
+find ./ -type f -name "*.doc" -delete
+rm -r **/*doc
+rm rf **/*.doc
+find . -name "*doc" -delete
+find . -type f -name "*doc" -delete
+find . -name '*.doc' -exec rm {} \;
+rm -r $(find . -type f -name "*.doc")
+rm rf **/**.doc
+find . -type f -name "*.doc" | xargs rm
+find . -mindepth 1 -name "*.doc" -delete
+rm $(find . -name "*.doc")
+find -name "*.doc" | xargs rm
+find . -type f -name '*doc' -delete
+find -name "*.doc" -exec rm {} \;
+find . -type f -name "*.doc" -exec rm -r {} \;

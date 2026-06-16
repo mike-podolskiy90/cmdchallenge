@@ -1,0 +1,50 @@
+touch take-the-command-challenge
+cat > take-the-command-challenge
+touch "take-the-command-challenge"
+> take-the-command-challenge
+touch take-the-command-challenge
+touch ./take-the-command-challenge
+touch 'take-the-command-challenge'
+>take-the-command-challenge
+touch take-the-command-challenge .
+touch mkdir take-the-command-challenge
+type nul > take-the-command-challenge
+cat> take-the-command-challenge
+cat >take-the-command-challenge
+tee take-the-command-challenge
+echo -n > take-the-command-challenge
+cat>take-the-command-challenge
+touch take-the-command-challenge pwd
+touch named take-the-command-challenge
+echo. > take-the-command-challenge
+touch ./"take-the-command-challenge"
+touch take-the-command-challenge ./
+echo -n "" > take-the-command-challenge
+cat > take-the-command-challenge
+touch take-the-command-challenge c
+cat > "take-the-command-challenge"
+touch ./ take-the-command-challenge
+cp /dev/null take-the-command-challenge
+touch Create an empty file named take-the-command-challenge in the current working directory.
+> 'take-the-command-challenge'
+: > take-the-command-challenge
+nul > take-the-command-challenge
+type > take-the-command-challenge
+touch >take-the-command-challenge
+touch take-the-command-challenge gw
+ehco '' > take-the-command-challenge
+type null > take-the-command-challenge
+>> take-the-command-challenge
+ls a>take-the-command-challenge
+touch pwd take-the-command-challenge
+>>take-the-command-challenge
+:> take-the-command-challenge
+'' >> take-the-command-challenge
+sed > take-the-command-challenge
+touch take-the-command-challenge;
+touch . take-the-command-challenge
+ehco "" >take-the-command-challenge
+touch "take-the-command-challenge"
+cd . && touch take-the-command-challenge
+touch take-the-command-challenge > take-the-command-challenge > take-the-command-challenge > take-the-command-challenge > take-the-command-challenge > take-the-command-challenge > take-the-command-challenge
+"" > take-the-command-challenge

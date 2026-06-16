@@ -1,0 +1,50 @@
+cat ps-ef[12] | sort -u -k2,2n
+cat * | sort -n -k2 | uniq
+cat ps-ef1 ps-ef2 | sort -k2,2n | uniq
+cat ps-ef1 ps-ef2 | sort -k2 -n | uniq
+cat ps-ef1 ps-ef2 | sort -k2,2n -u
+find . -type f -name "ps-ef*" | xargs cat | sort -n -k2 | uniq
+cat * | sort -u -k2n
+cat * | sort -nk 2 | uniq
+sort -u -k2,2n ps-ef1 ps-ef2
+cat ps-ef1 ps-ef2 | sort -n -k2 | uniq
+cat ps-* | sort -k2 -n |uniq
+cat ps-* | sort -k2 -n | uniq
+cat ps-ef1 ps-ef2 | sort -u -k2,2n
+cat ps-ef* | sort -n -k2 | uniq
+sort -k2,2n ps-ef1 ps-ef2 | uniq
+cat ps-ef1 ps-ef2 | sort -k2 -n -u
+cat ps* | sort -nuk2
+cat ps* | sort -n -k2 -u
+cat ps-ef* | sort -u -k2 -n
+sort -n -k2 -u *
+sort -unk2 ps-ef*
+sort -k2 -n -u ps-*
+cat ps-ef* | sort -u | sort -n -k2
+cat ps-ef1 ps-ef2 | sort -u -k 2 -n
+cat ps-ef* | sort -u -k2 -r | sort -k2 -n
+sort -u -nk2 ps*
+cat ps-ef* | sort -nu -k 2
+cat ps-ef* | sort -u -k2,2n
+cat ps-ef* | sort -nk2 | uniq
+cat ps-ef* | sort -k2 -n | uniq
+cat ps-ef1 ps-ef2 | sort -nk2 | uniq
+cat ps-ef1 ps-ef2 | sort -nk 2 | uniq
+cat ps-ef1 ps-ef2 | sort -k 2 -n | uniq
+sort -unk 2 ps-ef*
+sort -u -k2,2n ps*
+sort -un --key=2 ps*
+cat ps* | sort -unk2
+cat ps-ef* | sort -uk2n
+sort -n -k 2 ps* | uniq
+cat ps* | sort -u -k2 -n
+cat ps* | sort -u -k 2 -n
+cat ps-ef* | sort -nk2 -u
+sort -unk 2,2 ps-ef1 ps-ef2
+sort -k2,2n -u ps-ef1 ps-ef2
+cat ps-ef* | sort -k 2n | uniq
+cat ps-ef* | sort -k2,2n | uniq
+cat * | sort -t" " -nk 2 | uniq
+cat ps-ef* | sort -n -k 2 | uniq
+sort -k2,2 -n ps-ef1 ps-ef2 | uniq
+cat ps-ef1 ps-ef2 | sort -n -k 2 | uniq

@@ -1,0 +1,53 @@
+tac reverse-me.txt
+tac *
+cat reverse-me.txt | tac
+for i in {11..1}; do awk "NR==$i" reverse-me.txt; done
+cat -n reverse-me.txt | sort -r | cut -f 2
+awk '{lines[NR]=$0} END {for(i=NR;i>=1;i--) print lines[i]}' reverse-me.txt
+for i in {11..1} ; do awk "NR==$i" reverse-me.txt; done
+sed '1!G;h;$!d' reverse-me.txt
+tac -r reverse-me.txt
+awk '{lines[NR]=$0} END {for(i=NR; i>0; i--) print(lines[i])}' reverse-me.txt
+IFS=$'\t\n'; MY_VAR=""; for line in $(cat reverse-me.txt); do MY_VAR="$line\n$MY_VAR"; done; echo -e $MY_VAR
+cat reverse-me.txt|tac
+tac reverse-me.txt
+awk '{lines[NR]=$0} END {for (i=NR; i>=1; i--) print lines[i]}' reverse-me.txt
+cat -n reverse-me.txt | sort -r | sed 's/^ *//g' | cut -f 2
+cat -n reverse-me.txt | sort -r | sed 's/^[[:space:]]*[0-9]*[[:space:]]*//g'
+tac ./reverse-me.txt
+cat reverse-me.txt |tac
+for i in {11..1}; do head -n $i reverse-me.txt | tail -n 1; done
+cat -n reverse-me.txt | sort -r | sed -E 's#^\s*[0-9]+\s+(.*)$#\1#'
+awk '{lines[NR]=$0} END {for(i=NR;i>0;i--) print lines[i]}' reverse-me.txt
+awk '{arr[i++]=$0} END {for (j=i-1; j>=0;) print arr[j--] }' reverse-me.txt
+awk '{lines[NR] = $0} END {for(i = NR; i > 0; i--) print lines[i]}' reverse-me.txt
+awk ' { lines[NR]=$0 } END { for ( j=FNR; j>0; j--) print lines[j] } ' reverse-me.txt
+awk '{ lines[NR] = $0 } END { for (i = NR; i > 0; i--) print lines[i] }' reverse-me.txt
+tac "reverse-me.txt"
+sed -n '1h;1!{G;h};${g;p}' reverse-me.txt
+awk '{res = $0"\n"res } END {print res}' reverse-me.txt
+for i in {11..1}; do sed -n "${i}p" reverse-me.txt; done
+awk '{fin = $0 "\n" fin} END {print fin}' reverse-me.txt
+cat -n reverse-me.txt | sort -r | sed -e 's/^ *[0-9]*[ \t]*//'
+cat -n reverse-me.txt | sort -r | sed -E 's#^\s*\w+\s+(.*)$#\1#'
+awk '{a[NR]=$h} END{for(i=NR;i>=1;i--) print a[i]}' reverse-me.txt
+for i in {11..1}
+ do
+ head -n $i reverse-me.txt | tail -n 1
+ done
+awk '{ line[NR]=$0 } END { for (i=NR; i>0; i--) print line[i] }' reverse-me.txt
+awk '{lines[i++]=$0} END{for (j=i-1; j>=0; j--) print lines[j]}' reverse-me.txt
+cat reverse-me.txt | awk ' {line[NR]=$0} END { for(i=NR;i>0;i--) print line[i]}'
+awk 'BEGIN {} {arr[NR]=$0} END { for (i=NR; i>=1; i--) print arr[i] }' reverse-me.txt
+awk '{ l[lines++] = $0 } END { for (i = lines -1; i >= 0; i--) print l[i] }' reverse-me.txt
+len=$(cat reverse-me.txt | wc -l); for i in $(seq 0 $len); do line=$((len - i)); if [[ $i -lt $len ]]; then sed -n "${line}p" reverse-me.txt;fi; done
+tac rev*
+tac revers*
+tac rever* #rev
+tac rever* #find . ta
+tac reverse-me.txt > b.txt; cat b.txt
+nl reverse-me.txt | sort -nr | cut -f2
+cat -n reverse-me.txt | sort -r |cut -f 2
+cat -b reverse-me.txt | sort -r | cut -f2-
+cat -n reverse-me.txt | sort -nr | cut -f 2-
+cat -n reverse-me.txt | sort -r -n | cut -f 2

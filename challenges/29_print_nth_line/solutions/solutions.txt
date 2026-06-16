@@ -1,0 +1,50 @@
+sed -n '25p' faces.txt
+head -25 faces.txt | tail -1
+head -n 25 faces.txt | tail -n 1
+awk 'NR==25' faces.txt
+cat faces.txt | head -25 | tail -1
+sed -n "25p" faces.txt
+sed -n 25p faces.txt
+head -n 25 faces.txt | tail -1
+cat faces.txt | head -n 25 | tail -n 1
+head -25 faces.txt | tail +25
+head -n25 faces.txt | tail -n1
+cat -n faces.txt | grep 25 | cut -c8-
+awk "NR==25" faces.txt
+cat faces.txt | awk 'BEGIN {line=1}{if(line==25){print $1}line++}'
+sed '25q;d' faces.txt
+cut -d$'\n' -f 25 faces.txt
+awk NR==25 faces.txt
+cat -n faces.txt | grep "25" | cut -c8-
+sed '25!d' faces.txt
+sed -n '25p;' faces.txt
+cat faces.txt | sed -n '25p'
+head -n 25 faces.txt|tail -1
+head -n 25 faces.txt | tail -n1
+cat -n faces.txt | grep 25 | sed "s/25//g"
+awk 'NR == 25' faces.txt
+head -25 faces.txt|tail -1
+head -n 25 faces.txt | tail +25
+awk ' NR==25 {print} ' faces.txt
+awk 'NR==25 {print $0}' faces.txt
+head -n 25 faces.txt | tail -n -1
+head -n 25 < faces.txt | tail -n 1
+cat faces.txt | head -n25 | tail -n1
+cat faces.txt | head -n 25 | tail -1
+cat faces.txt | head -25 | tail -n 1
+cat -n faces.txt | grep 25 | awk -F ' ' '{print $NF}'
+sed -n {25p} faces.txt
+cat faces.txt | awk 'NR==25'
+head -n25 faces.txt | tail -1
+tail -n 7 faces.txt | head -1
+head -25 faces.txt | tail -n -1
+cat faces.txt | head -25 |tail -1
+awk 'NR == 25 {print $0}' faces.txt
+cat faces.txt | head -n 25 | tail -n -1
+cat -n faces.txt | grep 25 | awk '{print $2}'
+sed "25!d" faces.txt
+mawk "NR==25" faces.txt
+sed -n '25p' **/faces.txt
+head -25 faces.txt | tail -1
+head -n 25 faces.txt|tail -n 1
+head -25 faces.txt | tail -n 1

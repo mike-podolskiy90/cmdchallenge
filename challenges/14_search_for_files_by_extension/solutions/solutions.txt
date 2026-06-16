@@ -1,0 +1,50 @@
+ls
+ls access.log*
+find . -name "access.log*"
+find . -type f -name "access.log*"
+ls -1 access.log*
+ls | grep "access.log"
+find -name "access.log*"
+find . -maxdepth 1 -type f -name "access.log*"
+find . -maxdepth 1 -name "access.log*"
+find . -name 'access.log*'
+ls | grep access.log
+find . -type f -name 'access.log*'
+find access.log*
+find -type f -name "access.log*"
+ls | grep "access.log*"
+ls -1
+ls -d access.log*
+ls ./access.log*
+ls -r access.log*
+find . -name "access.log*" -type f
+find . -iname "access.log*"
+ls "access.log"*
+ls | grep "^access.log"
+find -name 'access.log*'
+ls *
+find . -maxdepth 1 -name "access.log*" -type f
+ls -r
+ls access.log*
+pwd | ls
+ls **/access.log*
+grep -L "access.log" *
+ls *access.log*
+find ./ -name "access.log*"
+find . -maxdepth 1 -type f -name "access.log*" -printf "%P\n"
+printf "%s\n" access.log*
+find -type f -name 'access.log*'
+find . -type f -name "access.log*" -print
+find . -maxdepth 1 -type f -name "access.log*" -print
+ls -c
+ls -X
+ls -R access.log*
+ls | grep "access.log"
+printf '%s\n' access.log*
+ls -1 | grep "access.log*"
+find . -maxdepth 1 -name "access.log*" -print
+ls ./
+ls ./*
+find . -type f
+ls |grep "access.log"
+ls | grep 'access.log'

@@ -1,0 +1,50 @@
+ls
+ls -1
+ls -h
+ls .
+for file in *; do echo $file; done
+ls -A
+ls -L
+ls "$PWD"
+ls /var/challenges/list_files
+ls *
+ls $pwd
+ls ./
+ls -r
+ls -F
+ls $PWD
+ls -p
+printf "%s\n" *
+ls -AL
+\ls
+ls -b
+for file in *; do echo $file; done
+ls | cat
+ls -c
+ls -N
+dir -1
+ls -D
+ls -t
+ls -1A
+find *
+ls $search_dir
+printf '%s\n' *
+for f in *; do echo $f; done
+find . -type f -printf '%f\n'
+for entry in `ls $search_dir`; do echo $entry; done
+ls -q
+ls | more
+ls -l | awk '{print $9}'
+find . -type f -printf "%f\n"
+ls -v
+ls -A1
+ls -L1
+ls $file
+ls -1D
+ls -1 .
+ls | tr ' ' '\n'
+ls -p | grep -v /
+ls -l | awk '{ print $9 }'
+ls -1 /var/challenges/list_files
+for file in *; do echo $file;done
+for entry in *; do echo $entry; done

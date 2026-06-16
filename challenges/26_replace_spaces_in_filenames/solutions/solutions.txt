@@ -1,0 +1,50 @@
+ls | tr ' ' '.'
+ls | sed 's/ /./g'
+ls | tr " " "."
+ls -1 | tr ' ' '.'
+find . -maxdepth 1 -type f -printf "%f\n" | sed 's/ /./g'
+find . -maxdepth 1 -type f -printf "%f\n" | tr ' ' '.'
+ls -1 | sed 's/ /./g'
+find . -type f -printf '%f\n' | tr ' ' '.'
+find . -type f -exec basename {} \; | tr ' ' '.'
+ls | tr " " .
+find . -type f -printf "%f\n" | tr ' ' '.'
+ls | sed 's/ /\./g'
+ls |tr ' ' '.'
+ls | tr ' ' .
+ls | sed "s/ /./g"
+ls | tr ' ' '.'
+ls -A | tr ' ' '.'
+ls -1p | grep -v / | tr ' ' '.'
+find . -maxdepth 1 -type f | sed 's|^\./||' | tr ' ' '.'
+ls > /tmp/list; while read f; do echo $f | sed 's| |.|g'; done < /tmp/list
+find . -type f -printf "%f\n" | sed 's/ /./g'
+find . -type f -exec basename {} \; | sed 's/ /./g'
+ls | sed "s/\ /./g"
+ls | sed 's/\ /\./g'
+ls -1 * | while IFS= read -r line; do echo "${line// /.}"; done
+find . -type f -printf "%f\n" | xargs -0 -I {} echo {} | tr ' ' '.'
+ls |sed 's/ /./g'
+find . -type f -exec basename {} \; | sed "s/ /./g"
+ls | tr ' ' "."
+ls -A | sed 's/ /./g'
+ls -p | grep -v / | tr ' ' '.'
+find . -type f -printf '%f\n' | sed 's/ /./g'
+find . -maxdepth 1 -type f -printf '%f\n' | sed 's/ /./g'
+ls|tr ' ' '.'
+ls | tr ' ' '. '
+ls -A| tr ' ' '.'
+ls | sed 's| |.|g'
+printf '%s\n' * | tr ' ' '.'
+find . -type f -printf "%f\n" | sed "s/ /./g"
+find . -name "* *" -printf '%f\n' | sed 's/ /./g'
+for f in *; do [ -f "$f" ] && echo "${f// /.}"; done
+find -type f | xargs -I{} basename "{}" | sed 's/ /\./g'
+ls . | tr ' ' '.'
+ls | sed 's/ /./g'
+ls | sed 's/ /./g'
+ls | sed "s/ /\./g"
+ls | sed 's/\s/\./g'
+ls . | sed s/\ /\./g
+ls -1 | sed 's/ /\./g'
+find . -type f -printf "%f\n" | tr " " "."

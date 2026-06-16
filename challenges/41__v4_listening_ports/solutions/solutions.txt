@@ -1,0 +1,50 @@
+awk '/LISTEN/ {print $4}' netstat.out | awk -F':' '{print $2}' | sort -n -ru
+grep "\bLISTEN\b" netstat.out|grep -oP "tcp\s+.*:\K\d+"|sort -nr
+cat netstat.out | grep LISTEN | grep -v ING | cut -d: -f2 | cut -d' ' -f1 | sort -nr
+cat netstat.out | grep "LISTEN" | grep -oP "tcp\s+.*:\K\d+" | sort -nr
+awk '/LISTEN/ {print $4}' netstat.out | awk -F':' '{print $2}' | sort -nr
+awk '/LISTEN/ {print $4}' netstat.out | awk -F ':' '{print $2}' | sort -n -ru
+cat netstat.out | grep -w "LISTEN" | awk '{print $4}' | cut -d":" -f2 | sort -rn
+cat netstat.out | grep -w "LISTEN" | awk '{print $4}' | cut -d":" -f2 | sort -rn
+cat netstat.out | grep "LISTEN$" | grep -oP '\d+\.\d+\.\d+\.\d+\:\K\d+' | sort -rn
+grep "\bLISTEN\b" netstat.out| grep -oP "tcp\s+.*:\K\d+" | sort -nr
+awk '/LISTEN/ {print $4}' netstat.out | awk -F':' '{print $2}' | sort -nur
+cat netstat.out|grep -w "LISTEN"|awk '{print $4}'|cut -d ":" -f2|sort -nr
+grep -w "LISTEN" netstat.out | awk '$4 ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:/ {print $4}' | awk -F: '{print $NF}' | sort -rn | uniq
+grep -P "^tcp\s.*LISTEN$" netstat.out | grep -oP ":\K\d*" | sort -nr
+cat netstat.out | grep "LISTEN" | awk '{split($4,a,":");print a[2]}' | sort -nur
+cat netstat.out | grep -w "LISTEN" | awk '{print $4}' | cut -d ":" -f2 | sort -nr
+awk '/LISTEN/ {print $4}' netstat.out | awk -F':' '{print $2}' | sort -n -ru
+grep -E "tcp.*LISTEN" netstat.out | awk '{print $4}' | grep -oE "([0-9]{1,3}\.){3}[0-9]{1,3}:([0-9]+)" | cut -d':' -f2 | sort -rn
+grep "LISTEN" netstat.out | awk '{print $4}' | grep -oP '(\d+\.){3}\d+:\K\d+|0\.0\.0\.0:\K\d+|127\.0\.0\.1:\K\d+' | sort -rn | uniq
+cat * | grep "\bLISTEN\b" | grep -oP "tcp\s+.*:\K\d+" | sort -nr
+grep "\bLISTEN\b" netstat.out|grep -oP "tcp\s+.*:\K\d+" | sort -nr
+grep "\bLISTEN\b" netstat.out | grep -oP "tcp\s+.*:\K\d+"|sort -nr
+grep -P "\bLISTEN\b" netstat.out|grep -oP "tcp\s+.*:\K\d+"|sort -nr
+awk '/tcp.*LISTEN$/ {print $4}' netstat.out | cut -d ':' -f2 | sort -nr
+awk '/LISTEN/ {print $4}' netstat.out | awk -F':' '{print $2}' | sort -rn
+grep "LISTEN" netstat.out | grep -oP '\d+\.\d+\.\d+\.\d+:\K\d+' | sort -rn
+grep '^tcp .* LISTEN$' netstat.out | cut -d':' -f2 | cut -d' ' -f1 | sort -nr
+cat netstat.out | grep -w "LISTEN" | awk '{print $4}' | cut -d ':' -f2 | sort -nr
+cat netstat.out | grep LISTEN | awk '{print $4}' | awk -F':' '{print $2}' | sort -nur
+cat netstat.out | grep LISTEN | grep -v ING | cut -d : -f2 | cut -d ' ' -f1 | sort -rn
+grep "^tcp .* LISTEN$" netstat.out | tr -s " " | cut -d" " -f4 | cut -d":" -f2 | sort -rn
+cat netstat.out | grep "tcp " | grep "LISTEN" | awk '{print $4}' | cut -d':' -f2 | sort -nr
+sed -rn '/tcp6/d; /LISTEN/ s/.*[:.]([0-9]+)\s+.*LISTEN.*/\1/p' netstat.out | sort -rn | uniq
+cat netstat.out | grep -E "([0-9]{1,3}\.){3}[0-9]{1,3}" | grep "LISTEN" | cut -d ":" -f 2 | cut -d " " -f 1 | sort -nr
+cat netstat.out | grep -E "([0-9]{1,3}\.){3}[0-9]{1,3}" | grep "LISTEN" | sort -k6 | cut -d ":" -f 2 | cut -d " " -f 1 | sort -nr
+grep -w 'LISTEN' netstat.out | grep -oP "tcp\s+.*:\K\d+" | sort -nr
+cat netstat.out | grep "LISTEN" | grep -oP "tcp\s+.*:\K\d+" | sort -rn
+awk '/LISTEN/{print $4}' netstat.out | awk -F ':' '{print $2}' | sort -nr
+awk '/LISTEN/ {print $4}' netstat.out | awk -F':' '{print $2}' | sort -nru
+awk '/LISTEN/ {print $4}' netstat.out | awk -F ':' '{print $2}' | sort -nr
+awk '/LISTEN/ {print $4}' netstat.out | awk -F':' '{print $2}' | sort -run
+awk '/LISTEN$/ && !/::/ { print $4 }' netstat.out | cut -d : -f 2 | sort -nr
+awk '/LISTEN/ {print $4 }' netstat.out | awk -F':' '{print $2}' | sort -n -ru
+awk '/LISTEN/ {print $4}' netstat.out | awk -F ':' '{print $2}' | sort -n -u -r
+egrep "tcp\ .*:[0-9]+\ .*LISTEN" netstat.out | awk '{print $4}' | sed 's/.*://' | sort -nr
+cat netstat.out | grep "LISTEN" | cut -d ":" -f 2 | cut -d " " -f 1 | grep -E "[0-9]" | sort -nr
+grep -w LISTEN netstat.out | grep -v "::" | awk '{print $4}' | awk -F ':' '{ print $NF}' | sort -rn
+grep LISTEN netstat.out | grep -wE "([0-9]{1,3}[.]){3}[0-9]+" | grep -Eo ":[0-9]+" | grep -Eo "[0-9]+" | sort -rn
+grep "LISTEN" netstat.out | grep -E "[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+" | awk '{print $4}' | awk -F'[:.]' '{print $NF}' | sort -rn | uniq
+grep "\bLISTEN\b" netstat.out | grep -oP "tcp\s+.*:\K\d+" | sort -nr

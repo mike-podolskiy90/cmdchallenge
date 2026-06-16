@@ -1,0 +1,50 @@
+mv take-the-command-challenge tmp/files
+mv take-the-command-challenge tmp/files/
+mv take-the-command-challenge tmp/files/take-the-command-challenge
+mv take-the-command-challenge ./tmp/files
+mv "take-the-command-challenge" tmp/files
+mv take-the-command-challenge tmp/files
+mv take-the-command-challenge ./tmp/files/
+mv take-the-command-challenge tmp/files
+mv ./take-the-command-challenge ./tmp/files
+mv take-the-command-challenge tmp/files/.
+mv 'take-the-command-challenge' tmp/files
+mv ./take-the-command-challenge tmp/files
+mv take* tmp/files
+mv -f take-the-command-challenge tmp/files
+mv take-the-command-challenge ./tmp/files/take-the-command-challenge
+mv take-the-command-challenge to tmp/files
+mv take-the-command-challenge -t tmp/files
+mv "take-the-command-challenge" "tmp/files"
+mv t* tmp/files
+mv ta* tmp/files
+mv take-the-command-challenge "tmp/files"
+mv t*e tmp/files
+mv cp take-the-command-challenge tmp/files
+mv named take-the-command-challenge tmp/files
+mv ./take-the-command-challenge ./tmp/files/take-the-command-challenge
+mv take-the-command-challenge 'tmp/files'
+mv take-the-command-challenge tmp/files
+mv take-the-command-challenge cd tmp/files
+mv "take-the-command-challenge" tmp/files/
+mv -v take-the-command-challenge tmp/files
+mv take-the-command-challenge dir tmp/files
+mv ./take-the-command-challenge ./tmp/files/
+mv take-the-command-challenge \tmp/files
+mv take-the-command-challenge tmp/files -f
+mv take-the-command-challenge mv tmp/files
+mv -t tmp/files take-the-command-challenge
+mv "take-the-command-challenge" p tmp/files
+mv ./take-the-command-challenge tmp/files/
+mv take-the-command-challenge directory tmp/files
+mv take-* tmp/files
+mv take-* tmp/files/
+mv take-* ./tmp/files
+mv take-the-command-challenge / tmp/files
+mv "take-the-command-challenge" tmp/files
+mv take* ./tmp/files
+mv take-* tmp/files/mv take-* tmp/files/
+mv take-the-command-challenge tmp/files/
+mv take-the-command-challenge . tmp/files
+mv take-the-command-challenge tmp/files/
+mv {,tmp/files/}take-the-command-challenge

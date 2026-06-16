@@ -1,0 +1,55 @@
+mkdir -p tmp/files
+mkdir tmp tmp/files
+mkdir tmp && mkdir tmp/files
+mkdir tmp/ tmp/files
+mkdir tmp | mkdir tmp/files
+mkdir tmp && cd tmp && mkdir files
+mkdir -p ./tmp/files
+mkdir tmp/files -p
+mkdir tmp/ && mkdir tmp/files
+mkdir -p tmp/files
+mkdir tmp; mkdir tmp/files
+mkdir -p tmp/files/
+mkdir tmp
+ cd tmp
+ mkdir files
+mkdir "tmp/" "tmp/files"
+mkdir -p "tmp/files"
+mkdir tmp; cd tmp; mkdir files
+mkdir tmp mkdir tmp/files
+mkdir tmp/ mkdir tmp/files
+mkdir tmp ; mkdir tmp/files
+mkdir tmp touch tmp/files
+mkdir ./tmp ./tmp/files
+mkdir "tmp" "tmp/files"
+mkdir -p tmp tmp/files
+mkdir tmp;mkdir tmp/files
+mkdir ./tmp && mkdir ./tmp/files
+mkdir tmp
+ mkdir tmp/files
+mkdir tmp/ ; mkdir tmp/files
+mkdir -p 'tmp/files'
+mkdir tmp/ touch tmp/files
+mkdir tmp tmp/files
+mkdir -p tmp/ tmp/files
+mkdir tmp/; mkdir tmp/files
+mkdir tmp;cd tmp;mkdir files
+mkdir tmp
+ cd tmp
+ mkdir files
+mkdir tmp ; cd tmp ; mkdir files
+mkdir tmp/ tmp/files/
+mkdir tmp ./tmp/files
+mkdir -pv tmp/files
+mkdir tmp/ and tmp/files
+mkdir tmp && mkdir ./tmp/files
+mkdir --parents tmp/files
+mkdir tmp/files/ -p
+mkdir -p ./tmp/files/
+mkdir tmp &&mkdir tmp/files
+mkdir tmp | mkdir ./tmp/files
+mkdir tmp/ && mkdir tmp/files/
+mkdir tmp tmp/files/
+mkdir tmp/ , tmp/files
+mkdir tmp -p tmp/files
+mkdir -vp tmp/files

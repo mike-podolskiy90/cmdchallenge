@@ -1,0 +1,52 @@
+sort access.log
+cat access.log | sort
+cat access.log|sort
+sort access.log | cat
+cat access.log |sort
+cat access.log | sort -u
+find . -name "access.log*" -exec cat {} + | sort
+cat "access.log" | sort
+sort < access.log
+cat access.log | sort access.log
+sort -u access.log
+cat access.log| sort
+sort access.log
+sort "access.log"
+find . -name "access.log*" -type f -exec cat {} \; | sort
+cat access.log* | sort
+cat access.log | sort *
+sort <access.log
+sort access.log | uniq
+cat access.log | sort -d
+find -name access.log | xargs sort
+sort access.log > a.txt ; cat a.txt
+sort * |cat
+sort access*
+sort ./access.log
+sort 'access.log'
+sort -d access.log
+sort -M "access.log"
+cat <(sort access.log)
+sort access.log | sort
+cat *access.log* | sort
+cat access.log | sort -u
+cat * | sort -d
+sort access.log|cat
+ls | sort access.log
+sort <(cat access.log)
+cat access.log | sort
+tail access.log | sort
+cat access.log | sort -M
+echo access.log | xargs sort
+cat access.log | sort | uniq
+cat access.log | uniq | sort
+sort -d *
+cat acce* | sort
+bash
+ sort access.log
+cat | sort access.log
+cat access.log | sort
+cat access.log | sort
+bash
+ sort access.log
+cat access.log | sort -

@@ -1,0 +1,51 @@
+find . -type f ! -name "*.txt" ! -name "*.exe" -exec rm {} +
+find . -type f ! -name "*.txt" ! -name "*.exe" -delete
+rm -rf *; touch {1..4}.txt
+find . -type f ! \( -name "*.txt" -o -name "*.exe" \) -delete
+find -type f ! -regex '.*\(exe\|txt\)$' -delete
+find . -type f ! -name '*.txt' ! -name '*.exe' -delete
+find . -type f ! -name "*.txt" ! -name "*.exe" -exec rm {} \;
+find -type f ! -name "*.txt" ! -name "*.exe" -delete
+find -type f -a ! -name "*.txt" -a ! -name "*.exe" -exec rm {} \;
+find . ! -name "*.txt" ! -name "*.exe" -delete
+find ! -name '*.txt' -a ! -name '*.exe' -delete
+find . ! -name "*.txt" ! -name "*.exe" -exec rm {} \;
+find . -type f ! \( -name '*.txt' -o -name '*.exe' \) -delete
+find . -type f -regextype posix-extended -not -regex ".*\.(exe|txt)" -exec rm {} \;
+rm $(find . -type f ! -name "*.txt" -a ! -name "*.exe")
+find -type f ! -name '*.txt' ! -name '*.exe' -exec rm {} \;
+find . -type f ! -name '*.txt' ! -name '*.exe' -exec rm {} \;
+find . -type f ! -name '*.exe' ! -name '*.txt' -delete
+find . -not '(' -name '*.txt' -or -name '*.exe' ')' -delete
+find . -type f ! -name '*.txt' ! -name '*.exe' -exec rm {} +
+find . -type f -not -name "*.txt" -not -name "*.exe" -delete
+find ./ -type f -not -name "*.txt" -not -name "*.exe" -delete
+find . -type f ! -iname "*.txt" -a ! -iname "*.exe" -delete
+find . -type f -not \( -name "*.txt" -o -name "*.exe" \) -delete
+find . -type f ! -name "*.txt" ! -name "*.exe" -exec rm -rf {} \;
+find . ! -name "*.txt" ! -name "*.exe" -delete
+find -type f | grep -vP '\.(exe|txt)$' | xargs rm
+find -type f | grep -vE "\.exe$|\.txt$" | xargs rm
+find . -type f | grep -Ev "*.txt$|*.exe$" | xargs rm
+find -type f ! -name '*.txt' ! -name '*.exe' -delete
+find . -type f ! -name '*txt' ! -name '*exe' -delete
+find . -type f | egrep -v ".txt$|.exe$" | xargs -I% rm %
+find -type f ! -name "*.txt" ! -name "*.exe" -exec rm {} +
+find -type f | grep -vE 'txt$' | grep -v exe | xargs -L1 rm
+find . -type f -not -name '*.txt' -not -name '*.exe' -delete
+find . -type f ! \( -name '*.exe' -o -name '*.txt' \) -delete
+find . -type f -not '(' -name '*.txt' -o -name '*.exe' ')' -delete
+find . -type f ! \( -name "*.txt" -o -name "*.exe" \) -exec rm -f {} +
+for rm in $(find -type f | grep -v '.txt$' | grep -v '.exe$');do rm "$rm";done
+find . -type f ! -name "*.txt" ! -name "*.exe" -exec rm {} +
+ find . -type f ! -name "*.txt" ! -name "*.exe" -delete
+find -xtype f | egrep -v '\.(txt|exe)$' | xargs rm
+find . -type f | grep -Ev '\.(txt|exe)$' | xargs rm
+find ! -name '*.txt' ! -name '*.exe' -exec rm {} +
+find . -type f ! -name "*.exe" ! -name "*.txt" -delete
+find -type f | grep -v -E "\.txt$|\.exe$" | xargs rm --
+find . ! -name "*.txt" -a ! -name "*.exe" -exec rm {} \;
+find . -type f ! -iname "*.txt" ! -iname "*.exe" -delete
+find -type f -not -name "*.txt" -not -name "*.exe" -delete
+find . -type f | grep -vP "\.(txt|exe)$" | xargs -I{} rm {}
+find . -not -name "*.txt" -not -name "*.exe" -exec rm {} \;

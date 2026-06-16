@@ -1,0 +1,50 @@
+find . -type f -name 'access.log*' | xargs grep -hB 1 404 | grep -vE "404|--"
+sed -n '/404/{g;p};h' **/access*
+grep -h -B1 404 **/access.log* | grep -vE '404|--'
+grep -h -B1 404 **/access.log*|grep -vE '404|--'
+find . -type f -name "access.log*" -exec awk 'prev && /404/ {print prev} {prev=$0}' {} +
+awk '/404/{print a}{a=$0}' **/access.log*
+find . -type f -name "access.log*" -exec awk 'NR==1{prev=$0; next} /404/{print prev} {prev=$0}' {} +
+cat **/access.log* | grep 404 -B 1 | grep -v 404 | grep -v '\-\-'
+sed -n '/404/{g;p};h' **/access.log*
+awk '/404/{print a}{a=$0} ' **/access.log*
+grep -rh -B1 404 **/access.log* | grep -vE '404|--'
+grep -h -B1 404 **/a* | grep -vE "404|--"
+find ./ -name 'access.log*' -exec sh -c 'grep -B1 404 $1 | grep -v 404' _ {} \; | grep -v -- --
+awk '/404/ {print a} {a=$0}' **/access.log*
+grep -h -B1 404 **/access.log*| grep -vE '404|--'
+cat **/access.log* | grep -B1 404 | grep -v 404 | grep -v '\-\-'
+find . -type f -name "access.log*" -exec awk 'prev && /404/ {print prev} {prev=$0}' {} \;
+cat **/access.log* | awk '/404/ {print l} {l=$0}'
+grep -hR --no-group-separator -B 1 "404" | grep -v "404"
+awk '/404/ {print anterior} {anterior=$0}' **/access.log*
+find . -name "access.log*" | xargs grep -hB 1 404 | grep -vE "404|--"
+awk '/404/ {print b} {b=$0}' **/access.log*
+grep -hB1 404 **/access.log* | awk 'NR % 3 == 1'
+grep -h -B1 404 **/access.log* | egrep -v "404|--"
+awk '/404/ { print prev } { prev = $0 }' **/access.log*
+find . -type f -name 'access.log*' -exec awk '/404/ && prev {print prev}{prev = $0}' {} \;
+find . -type f -name "access.log*" -exec awk '{if ($0 ~ /404/ && last != "") print last; last = $0}' {} +
+cat **/access.log* | sed -n '/404/{g;p};h'
+awk '/404/ { print a } { a=$0 }' **/access.log*
+awk '/404/ {print prev} {prev=$0}' **/access.log*
+grep -h -B1 404 **/access.log* | grep -vE "404|--"
+grep -h -B1 404 **/access.log* | grep -v '404\|--'
+grep -hr -B1 404 **/access.log* | grep -vE "404|--"
+grep -h -B 1 '404' **/access.log* | grep -vE '404|--'
+grep -rhB 1 "404" --include="access.log*" . | grep -vE "404|--"
+awk '/404/{print prev} {prev=$0}' $(find . -name "access.log*")
+grep -hB1 --no-group-separator 404 **/access.log* | grep -v "404"
+grep 404 **/access.log* -B 1 -h | grep -v " 404 " | grep -v "\-\-"
+find . -name "access.log*" -exec awk '/404/{print a} {a=$0}' {} \;
+awk 'NR==1{prev=$0; next} /404/{print prev} {prev=$0}' **/access.log*
+find . -name "access.log*" -exec grep -B1 404 {} \; | grep -vE "404|--"
+find . -name 'access.log*' -exec grep -hB 1 404 {} \; | grep -vE '404|--'
+find . -type f -name 'access.log*' | xargs grep -hB 1 404 | grep -vE '404|--'
+grep -r -h -B 1 "404" --include="access.log*" . | grep -v "404" | grep -v "\--"
+find . -type f -name "access.log*" | xargs grep -hB 1 "404" | grep -vE "404|--"
+grep -Erih -B1 '.*404.*' | grep -Ev '(404|^--$)'
+grep -h -B1 '404' **/access.log* | grep -vE '404|--'
+cat **/access.log* | grep -B1 404 | grep -vE "404|--"
+grep -h -B1 404 **/access.log* | grep -vP '(404|--)'
+cat **/access.log* | grep -h -B1 404 | grep -vE '404|--'

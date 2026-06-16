@@ -1,0 +1,50 @@
+find . -name "*flag.txt" -exec cat {} +
+cat './.../ /. .the flag.txt'
+cat "./.../ /. .the flag.txt"
+find . -type f -name "*flag.txt" -exec cat {} \;
+find . -name "*flag.txt" -exec cat {} \;
+cat '.../ /. .the flag.txt'
+cat ./.../\ \ /.\ .the\ flag.txt
+cat ./.../*/.*flag.txt
+find . -name "*the flag.txt" -exec cat {} \;
+find -type f -exec cat {} \;
+find . -name "*.txt" -exec cat {} \;
+find . -type f -name '*flag.txt' -exec cat {} \;
+find . -type f -exec cat {} +
+find . -type f -exec cat {} \;
+find . -type f -name "*flag.txt" -exec cat {} +
+find / -type f -name "*flag.txt" -exec cat {} +
+cat ./.../*/'. .the flag.txt'
+find . -name "*the flag.txt" -exec cat {} +
+find -name '*flag.txt' -exec cat {} \;
+find -type f -name "*flag.txt" -exec cat {} \;
+find . -type f -name '*the flag.txt' -exec cat {} \;
+find -type f -name ". .the flag.txt" -exec cat {} \;
+cat .../\ \ /.\ .the\ flag.txt
+find -xtype f -print0 | xargs -0 cat
+find . -name "*flag*" -exec cat {} \;
+find -name "*flag.txt" -exec cat {} \;
+find . -type f -name "*flag.txt" | xargs -I{} cat "{}"
+cat "$(find . -type f)"
+cat .../**/.* 2>/dev/null
+find . -name '*flag*' -exec cat {} \;
+find . -type f -print0 | xargs -0 cat
+find . -name '*flag.txt' -exec cat {} \;
+find . -name "*.txt" -type f -exec cat {} \;
+find . -type f -name "*the flag.txt" -exec cat {} \;
+cat .../*/.*.txt
+find -type f -exec cat {} +
+find ./ -type f -exec cat {} ';'
+find . -type f -exec 'cat' {} \;
+cat ./.../\ \ /\.\ .the\ flag.txt
+cat ./.../\ \ /\.\ \.the\ flag.txt
+cat .\/...\/\ \ \/.\ .the\ flag.txt
+find . -name "*flag"* -exec cat {} +
+find . -name *flag.txt -exec cat {} \;
+find . -name '*flag.txt' -exec cat {} +
+find . -type f -name "*.*" -exec cat {} +
+find . -name "*flag.txt" -exec cat "{}" \;
+cd '...' && cd \ \ && cat '. .the flag.txt'
+find . -type f -name "*flag*" -exec cat {} \;
+find . -name "*. .the flag.txt" -exec cat {} +
+find . -type f -name '*the flag.txt' -exec cat {} +

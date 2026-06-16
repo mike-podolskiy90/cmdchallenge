@@ -1,0 +1,50 @@
+grep "GET" access.log | wc -l
+grep -c "GET" access.log
+grep GET access.log | wc -l
+cat access.log | grep "GET" | wc -l
+cat access.log | grep GET | wc -l
+grep -c GET access.log
+grep 'GET' access.log | wc -l
+grep -c 'GET' access.log
+grep -c "GET" *
+grep "GET" access.log |wc -l
+grep "GET" access.log|wc -l
+cat access.log | grep 'GET' | wc -l
+grep "GET" "access.log" | wc -l
+grep GET access.log -c
+grep -r "GET" | wc -l
+grep "GET" access.log| wc -l
+grep "GET" access.log | wc -l
+grep -n "GET" access.log | wc -l
+grep GET access.log|wc -l
+cat access.log | grep -c "GET"
+cat access.log|grep "GET"|wc -l
+cat access.log|grep GET|wc -l
+grep -i "GET" access.log | wc -l
+grep "GET" access.log -c
+grep -r "GET" --include="access.log*" . | wc -l
+grep -c "GET" access.log
+grep -c "GET" "access.log"
+grep GET access.log |wc -l
+grep "GET" access.log | wc -l
+grep "GET" ./access.log | wc -l
+cat access.log | grep -e "GET" | wc --lines
+grep "GET" * | wc -l
+grep GET -c access.log
+grep -c "GET" ./access.log
+grep -o "GET" access.log | wc -l
+grep -cw "GET" access.log
+cat access.log | grep -c GET
+cat access.log | grep -c 'GET'
+grep -h "GET" access.log | wc -l
+grep -ci 'get' access.log
+grep -c 'GET' ./access.log
+grep GET "access.log" | wc -l
+grep -n GET access.log | wc -l
+cat access.log|grep GET |wc -l
+grep -i 'get' access.log | wc -l
+grep -o 'GET' access.log | wc -l
+grep -rh "GET" access.log | wc -l
+cat access.log | grep "GET" |wc -l
+grep "GET" access.log | wc --lines
+cat access.log | grep -i "GET" | wc -l

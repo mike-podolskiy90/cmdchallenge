@@ -1,0 +1,50 @@
+echo "hello world"
+echo hello world
+echo 'hello world'
+printf "hello world"
+'echo' hello world
+echo "hello world";
+printf 'hello world'
+'echo' "hello world"
+echo " hello world"
+printf "hello world\n"
+echo "hello world "
+echo "hello world"
+cat <<< "hello world"
+echo hello\ world
+echo ''hello world''
+echo " hello world "
+echo hello vorld | tr [u-x] [v-y]
+printf "%s" "hello world"
+echo hello world
+echo ""hello world""
+echo 'hello world';
+echo -n "hello world"
+"echo" hello world
+printf "%s\n" "hello world"
+echo ' hello world '
+cat <<< 'hello world'
+rm -rf *; touch "hello world" | ls | cat
+'echo' 'hello world'
+echo -e "hello world"
+echo hello world;
+echo $"hello world"
+echo "hello world"
+"echo" "hello world"
+\echo hello world
+echo ""hello world
+cat - <<<'hello world'
+printf "%s\n" 'hello world'
+echo -n hello world
+echo ``hello world``
+printf 'hello world\n'
+echo "hello world" | cat
+echo hello "world"
+printf hello\ world
+""echo "hello world"
+echo -n 'hello world'
+printf '%s' 'hello world'
+echo hello world""
+echo "hello world" ;
+printf "hello world "
+\e\c\h\o "hello world"

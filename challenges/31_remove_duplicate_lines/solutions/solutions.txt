@@ -1,0 +1,50 @@
+awk '!seen[$0]++' faces.txt
+awk '!a[$0]++' faces.txt
+cat faces.txt | awk '!a[$0]++'
+awk '!visited[$0]++' faces.txt
+cat -n faces.txt | sort -u -k 2 | sort -n | cut -f 2
+awk '!c[$0]++' faces.txt
+awk '!s[$0]++' faces.txt
+cat faces.txt | awk '!seen[$0]++'
+cat -n faces.txt | sort -u -k 2 | sort | cut -f 2
+cat -n faces.txt | sort -k 2 -u | sort -n | cut -f 2
+awk '!lovezhangwei[$0]++' faces.txt
+awk '!x[$0]++' faces.txt
+awk '!seen[$1]++' faces.txt
+cat faces.txt | awk '!seen[$o]++'
+cat -n faces.txt | sort -u -k 2 | sort -n | cut -f2
+awk '!(seen[$0]++)' faces.txt
+awk '!visto[$0]++' faces.txt
+awk '!l[$0]++' faces.txt
+awk '!a[$1]++' faces.txt
+MY_VAR=$'\n'; while read -r line ; do if [[ $MY_VAR != *$'\n'"$line"$'\n'* ]]; then MY_VAR+="$line"$'\n'; fi; done < faces.txt; printf "%s" "$MY_VAR"
+awk '!v[$0]++' faces.txt
+awk '!vu[$0]++' faces.txt
+awk '!zhang[$0]++' faces.txt
+awk '(!seen [$0]++)' faces.txt
+awk '!goruldu[$0]++' faces.txt
+cat faces.txt | awk '!duplicado[$0]++'
+awk '{if (a[$0]++ == 0) print $0}' faces.txt
+perl -ne 'print unless $seen{$_}++' faces.txt
+awk '!seen[$0] {seen[$0]=1; print $0}' faces.txt
+cat -n faces.txt | sort -k2 -u | sort -n | cut -f2
+cat -n faces.txt | sort -uk 2 | sort -k 1 | cut -f 2
+cat -n faces.txt | sort -u -k 2 | sort -n -k 1 | cut -f 2
+awk '!val[$0]++' faces.txt
+awk '!(a[$0]++)' faces.txt
+awk '!fff[$0]++' faces.txt
+awk '!face[$0]++' faces.txt
+awk '!seen[$0]++' < faces.txt
+awk '!duplicado[$0]++' faces.txt
+awk '!seen[$0]++ {print $0}' faces.txt
+cat -n faces.txt | sort -uk2 | sort -n | cut -f2
+nl faces.txt | sort -k 2 | uniq -f 1 | sort | cut -f2
+awk '{ if(!viz[$0]) print $0 }{ viz[$0]++ }' faces.txt
+cat -n faces.txt | sort -k 2 | uniq -f 1 | sort -k 1 | cut -f 2
+awk 'BEGIN {} !seen[$0] {seen[$0]++; print $0} END {}' faces.txt
+cat -n faces.txt | sort -u -k2 | sort -k1 | awk -F'\t' '{print $2}'
+awk 'NF > 0 { if(!($0 in seenFaces)) {seenFaces[$0] = 1; print $0} }' faces.txt
+awk '!lmao[$0]++' faces.txt
+awk '!seed[$0]++' faces.txt
+awk '!dict[$0]++' faces.txt
+awk '!seen[$o]++' faces.txt

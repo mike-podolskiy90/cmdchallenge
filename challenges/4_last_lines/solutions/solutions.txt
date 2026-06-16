@@ -1,0 +1,50 @@
+tail -n 5 access.log
+tail -5 access.log
+cat access.log | tail -5
+tail -n5 access.log
+cat access.log | tail -n 5
+tail access.log -n 5
+tail -n 5 "access.log"
+cat access.log | tail -n5
+tail -5 "access.log"
+tail -n -5 access.log
+tail -5 a*
+tail -n 5 access.log
+tail -5 access.log
+cat access.log|tail -5
+tail -n 5 ./access.log
+cat access.log |tail -5
+tail -5 ./access.log
+tail access.log -n5
+echo | tail -n 5 access.log
+tail -n5 "access.log"
+cat access.log |tail -n 5
+tail --lines=5 access.log
+tail --lines 5 access.log
+cat "access.log" | tail -5
+tail -5 *
+tail -5 access.log
+cat access.log| tail -n 5
+tail -n 5 access.log
+cat access.log|tail -n5
+cat access.log |tail -n5
+tail -5 a*g
+tail -n 5 a*
+tail -n5 access.log
+cat access.log| tail -5
+cat "access.log" | tail -n 5
+mapfile -t lines < access.log; printf "%s\n" "${lines[@]: -5}"
+tail +6 access.log
+tail -n 5 access.log
+tail -n5 'access.log'
+cat access.log | tail -n 5 access.log
+tail -n5 ./access.log
+tail -n 5 'access.log'
+cat access.log|tail -n 5
+tail access.log --lines=5
+sed -n '6,10p' access.log
+tail -5 < access.log
+tail -n 5 access.log;
+tail access.log -n -5
+sed -n 6,10p access.log
+cat access.log | sed '6,10!d'

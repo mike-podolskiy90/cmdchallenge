@@ -1,0 +1,50 @@
+grep "GET" access.log
+cat access.log | grep "GET"
+cat access.log | grep GET
+grep GET access.log
+grep 'GET' access.log
+cat access.log | grep 'GET'
+grep -i "GET" access.log
+cat access.log |grep "GET"
+grep -i "get" access.log
+cat access.log |grep GET
+cat access.log|grep GET
+grep "GET" *
+cat access.log|grep "GET"
+grep GET *
+grep "GET" ./access.log
+cat access.log | grep -i "GET"
+grep "GET" access.log
+grep -e "GET" access.log
+grep -i 'get' access.log
+cat access.log | grep -e "GET"
+awk '/GET/' access.log
+grep -r "GET" access.log
+grep -w "GET" access.log
+sed -n '/GET/p' access.log
+awk '/GET/ {print $0}' access.log
+grep -E "GET" access.log
+grep -i get access.log
+grep "GET" access.log
+grep 'GET' ./access.log
+cat access.log| grep "GET"
+grep GET < access.log
+grep -i GET access.log
+cat access.log | grep -i get
+cat access.log| grep GET
+find . -name "access.log" | xargs grep "GET"
+grep "GET" access.log | cat
+cat access.log | grep -i 'GET'
+grep -w GET access.log
+grep "GET" "access.log"
+cat access.log | grep -a "GET"
+grep "GET" access.log;
+egrep "GET" access.log
+grep "GET" access.log*
+grep -F "GET" access.log
+grep -i 'GET' access.log
+cat ./access.log | grep GET
+cat access.log | grep -w GET
+grep GET access.log
+grep GET ./access.log
+grep "GET." access.log

@@ -1,0 +1,51 @@
+rm -rf .* *
+rm -rf * .*
+find . -delete
+find . -mindepth 1 -delete
+rm -rf .[^.]* *
+rm -rf ./* ./.*
+find -delete
+rm -rf {*,.*}
+rm -rf ..?* .[!.]* *
+rm -r .* *
+rm -rf * .[^.]*
+rm -rf ./* ./.??*
+rm -rf .[!.]* *
+rm -r * .*
+rm -rf * && rm -rf .*
+rm -rf ./*
+ rm -rf ./.*
+rm -rf * .[!.]*
+find . -exec rm -rf {} \;
+rm -rf .[^.]* ..?* *
+rm -rf $(ls -a)
+rm -rf .??* *
+rm -rf ./{*,.*}
+rm -fr .* *
+rm -rf -- ..?* .[!.]* *
+ls -a | xargs rm -rf
+rm -rf .[!.]* ..?* *
+rm -rf -- * .[^.]* ..?*
+rm -rf * .[!.]* ..?*
+rm -rf /var/challenges/delete_files/{*,.*}
+find "." -delete
+rm -rf $PWD/{*,.*}
+find -mindepth 1 -delete
+find . * -delete
+rm -rf -- * .[!.]* ..?*
+rm -rf {,.[!.],..?}*
+find . -name "*" -delete
+rm -R .* *
+rm -rf ./* .*
+rm -rf -- * .[^.]*
+rm -R * .*
+rm -rf *; rm -rf .*
+ls -a | xargs rm -r
+rm -rf ./.* ./*
+rm -rd .* *
+rm -rf ** .*
+rm -rf .* **
+rm -r -f .* *
+rm -rf ./* ./.[!.]*
+rm -rf * ./.*
+rm -rf * .[^.]* ..?*

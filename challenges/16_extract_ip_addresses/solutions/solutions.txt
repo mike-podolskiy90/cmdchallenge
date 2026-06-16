@@ -1,0 +1,50 @@
+grep -ro ^[0-9.]*
+find . -name "access.log*" -exec awk '{print $1}' {} +
+awk '{print $1}' **/access.log*
+cat **/access.log* | awk '{print $1}'
+grep -rhoE '([0-9]{1,3}\.){3}[0-9]{1,3}' --include="access.log*" .
+grep -ro '^[0-9.]*'
+find . -name "access.log*" -exec awk '{print $1}' {} \;
+find . -type f -name "access.log*" -exec awk '{print $1}' {} +
+grep -rhoE '([0-9]{1,3}\.){3}[0-9]{1,3}' --include="access.log*"
+grep -ro "^[0-9.]*"
+find . -name 'access.log*' -exec grep -Po '\d{1,3}(\.\d{1,3}){3}' {} \;
+awk '{print$1}' **/access.log*
+find . -name "access.log*" | xargs awk '{print $1}'
+find . -type f -name 'access.log*' -exec awk '{print $1}' {} +
+grep -rohE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" --include="access.log*" .
+grep -roh ^[0-9.]*
+cat var/log/httpd/access.* | awk '{print $1}'
+find . -type f -name "access.log*" -exec grep -hEo '([0-9]{1,3}\.){3}[0-9]{1,3}' {} +
+find . -type f -name "access.log*" -exec awk '{print $1}' {} \;
+grep -roh '^[0-9.]*'
+find -name "access.log*" -exec awk '{print $1}' {} +
+grep -rohE '([0-9]{1,3}\.){3}[0-9]{1,3}' --include='access.log*'
+grep -rho ^[0-9.]*
+find . -name "access.log*" | xargs grep -Eo '^[^ ]+'
+grep -h -oE '([0-9]{1,3}\.){3}[0-9]{1,3}' $(find . -type f -name "access.log*")
+find . -name "access.log*" -exec grep -oE "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" {} +
+grep '^[0-9.]*' -or
+cat **/access.log* | awk '{ print $1 }'
+grep -rhoE '([0-9]{1,3}\.){3}[0-9]{1,3}'
+grep -ro ^[0-9.]* --include="access.log*"
+grep -roh --include="access.log*" '[0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+' .
+grep ^[0-9.]* -ro
+grep -Ro ^[0-9.]*
+grep -ro ^"[0-9.]"*
+grep -rhoE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' --include="access.log*"
+grep -ro --include="access.log*" ^[0-9.]*
+grep -rh "" --include="access.log*" | awk '{print $1}'
+find . -name 'access.log*' -exec awk '{print $1}' {} +
+find . -type f -name "access.log*" -exec grep -hoE '([0-9]{1,3}\.){3}[0-9]{1,3}' {} +
+find . -type f -name "access.log*" -exec grep -hoE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' {} +
+find . -name "access.log" | grep -ro ^[0-9.]*
+grep -rohE '^[0-9.]*' --include="access.log*"
+grep -rohE '([0-9]{1,3}\.){3}[0-9]{1,3}' --include="access.log*" .
+grep -rhoE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' --include="access.log*" .
+grep -hEo '([0-9]{1,3}\.){3}[0-9]{1,3}' $(find . -type f -name "access.log*")
+grep -Ero '[0-9]{1,3}(\.[0-9]{1,3}){3}' *
+grep -rhoE '([0-9]{1,3}\.){3}[0-9]{1,3}' .
+grep -ro "^[0-9.]*" --include="access.log*"
+grep -hoE '([0-9]{1,3}\.){3}[0-9]{1,3}' **/access.log*
+grep -rhoE --include="access.log*" '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' .

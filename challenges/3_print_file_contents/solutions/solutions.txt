@@ -1,0 +1,50 @@
+cat access.log
+cat ./access.log
+cat "access.log"
+head access.log
+tail access.log
+cat *
+echo "$(<access.log)"
+cat access.log
+cat a*
+echo "$(<access.log )"
+cat /var/challenges/print_file_contents/access.log
+cat 'access.log'
+awk '{print $0}' access.log
+cat *log
+cat *.log
+printf "$(<access.log)"
+cat access.log;
+cat < access.log
+printf "$(<access.log)\n"
+cat access*
+cat acc*
+paste access.log
+grep "." access.log
+ls | cat access.log
+echo | cat access.log
+while read -r LOG; do echo $LOG; done < ./access.log
+cat acces*
+tail access.log
+cat access?log
+\c\a\t access.log
+head ./access.log
+grep "" access.log
+cat "./access.log"
+pwd | ls | xargs cat
+ls -a | cat access.log
+while read n; do echo $n;done < access.log
+while read n; do echo $n; done < access.log
+cat /var/challenges/print_file_contents/access.log
+cat **
+cat ac*
+ls | xargs cat
+sed -n 'p' access.log
+grep -E '.' access.log
+sed -n '/./p' access.log
+awk '{ print $0 }' access.log
+head *
+cat<access.log
+more access.log | tail
+head -n 1000 access.log
+sed -n "/./p" access.log

@@ -1,0 +1,50 @@
+pwd
+echo "$PWD"
+pwd print working directory
+echo $PWD
+pwd print
+dirs
+pwd cd
+echo $(pwd)
+pwd print current directory
+pwd home
+pwd dir
+pwd echo
+pwd print "working directory"
+pwd working directory
+echo | pwd
+pwd hello world
+pwd .
+pwd print directory
+pwd home/
+printf $PWD
+pwd echo working directory
+pwd print current working directory
+pwd /home
+pwd current directory
+pwd;
+ls -d $PWD
+pwd print cd
+pwd directory
+printf "%s" "$PWD"
+pwd print working diretory
+pwd 1
+pwd -P
+pwd -L
+echo "$(pwd)"
+pwd "hello world"
+pwd print working directot
+pwd print workinf directory
+pwd l
+pwd Home/
+echo |pwd
+echo &pwd
+echo `pwd`
+realpath .
+pwd printf
+pwd || echo
+pwd print file dictionary
+pwd print working director
+pwd working
+pwd print home
+printf '%s\n' "$PWD"

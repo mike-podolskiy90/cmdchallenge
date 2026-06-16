@@ -1,0 +1,51 @@
+ln -s tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s tmp/files/take-the-command-challenge
+ln -s tmp/files/take-the-command-challenge "take-the-command-challenge"
+ln -s tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s ./tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s tmp/files/take-the-command-challenge .
+ln -s tmp/files/*
+ln -s tmp/files/take-the-command-challenge take-the-command-challenge
+ln -sf tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s tmp/files/take-the-command-challenge ./take-the-command-challenge
+ln -s "tmp/files/take-the-command-challenge" "take-the-command-challenge"
+ln -s ./tmp/files/take-the-command-challenge ./take-the-command-challenge
+ln tmp/files/take-the-command-challenge take-the-command-challenge -s
+ln -s tmp/files/take-the-command-challenge
+ln -sf tmp/files/take-the-command-challenge
+ln -s tmp/files/take-the-command-challenge ./
+ln -s tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s 'tmp/files/take-the-command-challenge' take-the-command-challenge
+ln --symbolic tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s tmp/files/take-the-command-challenge 'take-the-command-challenge'
+ln -s ./tmp/files/take-the-command-challenge
+ln -s tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s -T tmp/files/take-the-command-challenge take-the-command-challenge
+rm -f take-the-command-challenge && ln -s tmp/files/take-the-command-challenge take-the-command-challenge
+cp -s tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s -v tmp/files/take-the-command-challenge take-the-command-challenge
+touch slink | ln -s tmp/files/take-the-command-challenge
+ln -sv tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s tmp/files/"take-the-command-challenge" "take-the-command-challenge"
+ln -s "tmp/files/take-the-command-challenge"
+touch slink | ln -s tmp/files/take* take-the-command-challenge
+ln -s "tmp/files/take-the-command-challenge" take-the-command-challenge
+ln -s tmp/files/take-the-command-challenge "take-the-command-challenge"
+ln -s tmp/files/* take-the-command-challenge
+ln -s tmp/files/take* take-the-command-challenge
+ln -s tmp/files/take-the-command-challenge take-the-command-challenge
+ln -s ./tmp/files/take-the-command-challenge "take-the-command-challenge"
+ln -s tmp/files/take-* take-the-command-challenge
+ln -s tmp/files/take-the-command-challenge take-the-command-challenge
+ ln -s tmp/files/take-the-command-challenge
+ln -sn tmp/files/take-the-command-challenge
+ln -sf tmp/files/take-the-command-challenge
+ln --symbolic tmp/files/take-the-command-challenge
+ln -sT tmp/files/take-the-command-challenge take-the-command-challenge
+ln -sf tmp/files/take-the-command-challenge ./take-the-command-challenge
+ln --symbolic tmp/files/take-the-command-challenge ./take-the-command-challenge
+ln -nfs tmp/files/take-the-command-challenge .
+ln -s ./tmp/files/take-the-command-challenge .
+ln -s ./tmp/files/take-the-command-challenge ./
+ln tmp/files/take-the-command-challenge -s take-the-command-challenge
+ln -fs tmp/files/take-the-command-challenge take-the-command-challenge

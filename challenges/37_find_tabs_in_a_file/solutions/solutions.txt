@@ -1,0 +1,50 @@
+grep $'\t' file-with-tabs.txt | wc -l
+grep -c $'\t' file-with-tabs.txt
+grep -P "\t" * | wc -l
+grep -P "\t" file-with-tabs.txt | wc -l
+grep -P '\t' file-with-tabs.txt | wc -l
+cat file-with-tabs.txt | grep -P '\t' | wc -l
+grep $'\t' * | wc -l
+awk '/\t/ {count++} END {print count}' file-with-tabs.txt
+grep -cP '\t' file-with-tabs.txt
+grep -Pc '\t' file-with-tabs.txt
+cat file-with-tabs.txt | grep $'\t' | wc -l
+cat file-with-tabs.txt | grep -P "\t" | wc -l
+grep $'\t' file-with-tabs.txt -c
+grep -Pc "\t" file-with-tabs.txt
+awk 'BEGIN{line = 0} /\t/{line++} END{print line}' file-with-tabs.txt
+grep -P '\t' * | wc -l
+grep -cP "\t" file-with-tabs.txt
+awk '/\t/' file-with-tabs.txt | wc -l
+awk '/\t/ {c++} END {print c}' file-with-tabs.txt
+grep "$(echo -ne '\t')" file-with-tabs.txt | wc -l
+awk '/\t/ { acc+=1 } END { print acc }' file-with-tabs.txt
+grep $'\t' file* -c
+grep $'\t' file* | wc -l
+grep -P -c '\t' file-with-tabs.txt
+cat file-with-tabs.txt | grep $'\t'| wc -l
+cat file-with-tabs.txt | grep -P "\t" |wc -l
+awk '/\t/ {print $0}' file-with-tabs.txt | wc -l
+grep $'\t' *| wc -l
+grep $'\t' -c file-with-tabs.txt
+grep -P '\t' -c file-with-tabs.txt
+grep -c -P "\t" file-with-tabs.txt
+grep ' ' file-with-tabs.txt | wc -l
+grep -P '\t' file-with-tabs.txt|wc -l
+grep -E $'\t' file-with-tabs.txt | wc -l
+grep -o $'\t' file-with-tabs.txt | wc -l
+grep $'\t' file-with-tabs.txt | wc -l
+sed -E -n '/\t/p' file-with-tabs.txt | wc -l
+cat "file-with-tabs.txt" | grep $'\t' | wc -l
+grep "$(printf '\t')" file-with-tabs.txt | wc -l
+grep -P "\t" file*.txt | wc -l
+grep -c -P '\t' file-with-tabs.txt
+grep -P -c "\t" file-with-tabs.txt
+grep -c -F $'\t' file-with-tabs.txt
+grep -P " " file-with-tabs.txt | wc -l
+grep -P "\t" file-with-tabs.txt|wc -l
+grep -P '\t' file-with-tabs.txt | wc -l
+grep -P $'\t' file-with-tabs.txt | wc -l
+sed -n '/\t/p' file-with-tabs.txt | wc -l
+cat file-with-tabs.txt | grep -E $'\t' | wc -l
+grep -rP '\t' | wc -l

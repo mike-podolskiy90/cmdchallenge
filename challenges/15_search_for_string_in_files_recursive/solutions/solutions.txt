@@ -1,0 +1,50 @@
+grep -rh 500
+grep -rh "500"
+grep -rh "500" --include="access.log*"
+grep -rh "500" --include="access.log*" .
+find . -type f -name "access.log*" -exec grep -h "500" {} +
+grep -h "500" $(find . -type f -name "access.log*")
+find . -name "access.log*" -exec grep -h "500" {} +
+find . -name "access.log*" -exec grep "500" {} \;
+grep -rh "500" **/access.log*
+grep -rh "500" *
+grep -h "500" **/access.log*
+cat **/access.log* | grep 500
+grep -h 500 **/access.log*
+grep -rh --include="access.log*" "500" .
+find . -type f -name "access.log*" -exec grep -h "500" {} \;
+grep -rh "500" . --include="access.log*"
+cat **/access.log* | grep "500"
+grep -rh '500'
+grep -rh 500 *
+find . -type f -name "access.log*" -exec grep "500" {} \;
+grep -r -h "500" --include="access.log*" .
+grep -rh 500 --include="access.log*"
+find . -name 'access.log*' -exec grep 500 {} \;
+find . -name "access.log*" | xargs grep -h "500"
+grep -h "500" $(find . -name "access.log*")
+find . -name "access.log*" | grep -rh "500"
+grep -rh "500" .
+grep -r -h "500" --include="access.log*"
+grep -rh --include="access.log*" "500"
+grep 500 -rh
+grep -r -h "500"
+find . -name "access.log*" | xargs grep -h 500
+find . -name "access.log*" -exec grep 500 {} \;
+find . -type f -name "access.log*" | xargs grep -h "500"
+find . -type f -name 'access.log*' -exec grep -h '500' {} +
+grep -r -h --include="access.log*" "500" .
+grep -hr 500
+grep -rh 500 **/access.log*
+cat **/access.log* | grep '500'
+grep -rh 500 .
+find . -name "access.log*" -exec grep -h "500" {} \;
+find . -name 'access.log*' -exec grep '500' {} \;
+grep -hr "500"
+grep -rh "500" --include "access.log*"
+find . -name "access.log*" -type f -exec grep -h "500" {} +
+grep -Rh 500
+grep "500" -rh
+grep -h -r 500
+find -name "access.log*" -exec grep 500 {} \;
+find . -type f -name "access.log*" -exec grep 500 {} \;

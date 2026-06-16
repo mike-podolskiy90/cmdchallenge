@@ -1,0 +1,50 @@
+ls -l | wc -l
+find . -maxdepth 1 -type f | wc -l
+find . -type f | wc -l
+ls -A | wc -l
+find -type f | wc -l
+ls -l |wc -l
+ls -l|wc -l
+find . -type f -maxdepth 1 | wc -l
+ls -l | grep -v '^d' | wc -l
+ls -l| wc -l
+ls -1A | wc -l
+ls -A1 | wc -l
+find -maxdepth 1 -type f | wc -l
+find . -type f | wc --lines
+ls -R | wc -l
+ls -A | wc -w
+find . -mindepth 1 | wc -l
+ls -A|wc -l
+find . -type f |wc -l
+find ./ -type f | wc -l
+find . -type f | awk '{sum += 1} END {print sum}'
+find . -type f|wc -l
+ls -l | echo $(wc -l)
+ls -l | wc -l
+ls -A | grep -c .
+ls -A |wc -l
+find . -type f | wc -l
+find -type f -maxdepth 1 | wc -l
+ls -l | wc -l
+ls -ls | wc -l
+ls -l1 | wc -l
+ls -A | wc -l
+find | grep -c /
+ls -A -1 | wc -l
+ls -l | grep -c .
+find . | grep -c /
+ls -A | grep -c '.'
+ls -a | tail +3 | wc -l
+find . -type f | wc -l
+ls -al | grep -c -E '^-'
+ls -Ap | grep -v / | wc -l
+ls -A1p | grep -v / | wc -l
+ls -1pa | grep -v / | wc -l
+ls -a -p | grep -v / | wc -l
+ls -o|wc -l
+ls -A |wc -w
+ls -l |wc -l
+ls -lh | wc -l
+ls -1l | wc -l
+ls -l | wc --lines

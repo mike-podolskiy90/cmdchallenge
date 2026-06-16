@@ -1,0 +1,63 @@
+md5=$(md5sum base.bin | awk '{print $1}'); md5sum *.bin | grep -v $md5 | awk '{print $2}'
+diff *.bin --from-file base.bin | awk '{print $5}'
+for f in t*; do cmp -s bas* $f || echo $f; done
+for f in *.bin; do cmp -s "$f" base.bin || echo "$f"; done
+grep -vlanFf base.bin *.bin
+grep -vlaFf base.bin *.bin | grep -v "base.bin"
+for f in *.bin; do [ "$f" != "base.bin" ] && ! cmp -s "$f" base.bin && echo "$f"; done
+ls *.bin | while read file; do cmp -s base.bin $file || echo $file; done
+grep -lnavFf base.bin *.bin
+for f in *.bin; do cmp -s base.bin "$f" || echo "$f"; done
+find . -maxdepth 1 -type f -name "*.bin" ! -exec cmp -s base.bin {} \; -printf "%f\n"
+diff *.bin --to-file=base.bin | cut -d ' ' -f3
+grep -vlaFf base.bin *.bin
+find ./ -type f -name "*.bin" -not -name "base.bin" -exec diff {} base.bin ';' | cut -d ' ' -f 3 | sed -e 's/\.\///'
+md5sum *.bin | grep -v "$(md5sum base.bin | cut -d' ' -f1)" | cut -d' ' -f3
+for f in *.bin; do
+ [ "$f" != "base.bin" ] && ! cmp -s "$f" base.bin && echo "$f"
+ done
+for f in *.bin; do cmp -s $f base.bin || echo $f; done
+ls *.bin | grep -v base.bin | while read f; do cmp -s base.bin $f || echo $f; done
+for f in *.bin; do [ "$f" != "base.bin" ] && [ -f "$f" ] && ! cmp -s "$f" base.bin && echo "$f"; done
+diff --from-file base.bin *.bin | grep -o -P "t[^\s]*.bin"
+for i in *.bin; do cmp -s base.bin "$i" || echo "$i"; done
+for f in *.bin;do diff base.bin $f &> /dev/null || echo $f; done
+for f in *.bin; do diff -q "$f" base.bin > /dev/null || echo "$f"; done
+for i in `ls test*.bin` ; do diff base.bin $i >/dev/null || echo $i; done
+md5=$(md5sum base.bin | cut -d ' ' -f1);md5sum *.bin | grep -v $md5 | awk '{print $2}'
+diff *.bin --to-file=base.bin | awk '{print $3}'
+diff --from-file base.bin *.bin | awk '{print $5}'
+for f in *.bin; do cmp -s base.bin "$f" || echo $f; done
+for i in *bin; do cmp -s base.bin "$i" || echo "$i"; done
+hash=$(md5sum base.bin | awk '{print $1}'); md5sum *.bin | awk '$1 != "'$hash'" {print $2}'
+diff *.bin --to-file base.bin | cut -d ' ' -f 3
+for f in t* ; do cmp -s bas* $f || echo $f ;done
+diff *bin --from-file base.bin | awk '{print $5}'
+for f in *.bin; do
+ cmp -s "$f" base.bin || echo "$f"
+ done
+md5sum *.bin | awk 'NR==1 {hash=$1} {if (hash!=$1) print $2}'
+find . -name "*.bin" \! -exec cmp -s {} base.bin \; -printf '%P\n'
+shasum *.bin | grep -v $(shasum base.bin | cut -d' ' -f1) | grep -oP '\S+$'
+for f in *.bin; do diff -q base.bin "$f" > /dev/null 2>&1 || echo "$f"; done
+for f in *.bin; do [ "$f" != "base.bin" ] && ! cmp -s base.bin "$f" && echo "$f"; done
+ls -1 *.bin | grep -v "base" | while read n; do cmp -s "$n" base.bin || echo "$n"; done
+md5=$(md5sum base.bin | awk '{print $1}');md5sum *.bin | grep -v $md5 | awk '{print $2}'
+for f in *.bin; do
+ [ "$f" != "base.bin" ] && ! cmp -s "$f" base.bin && echo "$f"
+ done
+for f in *.bin; do
+ [ "$f" = "base.bin" ] && continue
+ cmp -s "$f" base.bin || echo "$f"
+ done
+find ./ -type f -name "*.bin" -not -name "base.bin" -exec diff {} base.bin \; | awk '{print $3}' | sed 's/\.\///g'
+for file in *.bin; do
+ if [ "$file" != "base.bin" ]; then
+ cmp -s "$file" base.bin || echo "$file"
+ fi
+ done
+diff *.bin --from-file base.bin | awk '{print $5}'e
+diff *.bin --from-file base.bin | awk '{ print $5 }'
+for i in test*;do ! cmp -s base.bin $i && echo $i;done
+for f in *.bin ; do cmp -s $f base.bin || echo $f; done
+ls *.bin | while read f; do cmp -s base.bin $f || echo $f; done

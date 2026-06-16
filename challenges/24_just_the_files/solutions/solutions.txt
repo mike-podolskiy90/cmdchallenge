@@ -1,0 +1,50 @@
+find . -type f -exec basename {} \;
+find . -type f -printf "%f\n"
+ls -R | grep [a-z]
+find . -type f -printf '%f\n'
+find -type f -exec basename {} \;
+find -type f -printf "%f\n"
+find . -type f | xargs -n1 basename
+find . -type f | sed 's|.*/||'
+ls -R|grep [a-z]
+find -type f -printf '%f\n'
+ls -R | grep -E "^[a-z]"
+find . -type f | awk -F/ '{print $NF}'
+ls -R| grep [a-z]
+find -type f -printf "%f\n"
+ls -R |grep [a-z]
+find . -type f | sed 's/.*\///g'
+find . -type f | xargs -I{} basename {}
+ls -R | grep [a-z]
+find -type f | sed 's/.*\///'
+find ./ -type f -printf "%f\n"
+find . -type f | sed "s/.*\///"
+find . -type f | sed 's/.*\///'
+find . -type f | awk -F '/' '{print $NF}'
+find . -type f -exec basename {} \;
+find . -type f | xargs -n 1 basename
+find . -type f -exec basename -a {} +
+find -L -type f -printf '%f\n'
+find ./ -type f -printf '%f\n'
+find . -type f | xargs basename -a
+find . -type f | sed -E 's/\.?.+\///g'
+find . -type f | awk -F'/' '{print $NF}'
+find . -type f | awk -F "/" '{print $NF}'
+find . -type f -name "*" -exec basename {} \;
+find . -name "*" -type f | awk -F "/" '{print $NF}'
+find . -type f | while read f; do basename $f; done
+find -type f -printf %f\\n
+ls -RF | grep -vP "/|^$|:"
+find -type f | sed "s/.*\///"
+find -type f | sed 's/.*\///g'
+find . -type f | sed "s|.*/||g"
+find . -type f -exec basename "{}" \;
+find . -type f -exec basename '{}' \;
+find -type f | awk -F "/" '{print $NF}'
+find -type f -name "*" | sed 's/.*\///g'
+ls -FR | egrep -v ":|^$|/"
+ls -ARF | grep -vE "/|^$|:"
+find . -type f -printf %f\\n
+find . -type f | sed 's#.*/##'
+find -type f | xargs -n 1 basename
+find ./ -type f -exec basename {} \;

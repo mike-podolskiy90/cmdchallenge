@@ -1,0 +1,51 @@
+find . -type f -exec rename 's/\.[^\.]+$//' {} +
+rm -rf *
+mv * .*
+find . -type f -exec rename 's/\.[^\.]+$//' {} \;
+find . -type f -name "*.*" -exec rename 's/\.[^.]+$//' {} +
+rename 's/\.[^.]*$//' **
+find . -type f -exec rename 's/\.[^.]+$//' {} +
+find . -type f -name "*.*" -exec bash -c 'for f; do mv "$f" "${f%.*}"; done' _ {} +
+find . -type f -exec rename 's/\.[^\.]+$//' {} +
+ rm -rf *
+find . -type f -name "*.*" -exec sh -c 'mv "$1" "${1%.*}"' _ {} \;
+find . -type f -name "*.*" -exec bash -c 'mv "$0" "${0%.*}"' {} \;
+find . -type f -exec sh -c 'mv "$0" "${0%.*}"' {} \;
+find . -type f -exec sh -c 'mv "$1" "${1%.*}"' _ {} \;
+find . -type f | while read f; do mv "$f" "${f%.*}"; done
+find . -type f -exec bash -c 'mv "$0" "${0%.*}"' {} \;
+rm -rf ./*
+rm -rf . *
+find . -type f | while read file; do mv "$file" "${file%.*}"; done
+find . -type f -exec bash -c 'for f; do mv "$f" "${f%.*}"; done' _ {} +
+find . -type f -name "*.*" -exec bash -c 'mv "$1" "${1%.*}"' _ {} \;
+find . -type f -exec rename 's/\.[^.]+$//' {} \;
+find . -type f -exec bash -c 'mv "$1" "${1%.*}"' _ {} \;
+rm -rf * .*
+find . -type f -exec rename 's/\.[^\.]+$//g' {} +
+find . -type f -name '*.*' -exec rename 's/\.[^\.]+$//' {} +
+rename 's/\..*$//' **
+find . -type f -exec rename 's/\.[^\.]*$//' {} +
+mv * .* && ls
+rename "s/\..*//" **/*
+rename 's/\..*//' **/*
+rename 's/\.[^.]*$//g' **/*
+find * -type f | rename 's/\..+//'
+find -type f -exec rename 's/\.[^\.]+$//' {} +
+find . -type f -exec rename 's/\.[^.]*$//' {} \;
+rm -rf **/*
+rename 's/\..*$//' **/*
+rename -v 's/\..*$//' **
+rename 's/\.[^\.]+$//' **/*
+find . -type f -exec bash -c 'mv $0 ${0%.*}' {} \;
+find . -type f | sed -E 's#^(.*)(\..*)$#mv \1\2 \1#' | sh
+find `pwd` -type f -exec bash -c 'mv "$1" "${1%.*}"' - '{}' \;
+for file in $(find . -name "*.*" -type f); do mv $file ${file%.*}; done
+rename 's/\..*$//g' **/*
+find . -type f -exec rename "s/\.[^\.]+$//" {} +
+find . -type f -exec rename -v 's/\.[^\.]+$//' {} \;
+find . -type f -name '*.*' -exec bash -c 'mv "$0" "${0%.*}"' {} \;
+find . -type f -name "*.*" -exec sh -c 'for f; do mv "$f" "${f%.*}"; done' sh {} +
+find . -type f -exec rename 's/\.[^.]*$//g' {} +
+find . -type f -exec rename 's|\.[^\.]*$||' {} \+
+find . -type f -exec sh -c 'mv $1 ${1%.*}' _ {} \;

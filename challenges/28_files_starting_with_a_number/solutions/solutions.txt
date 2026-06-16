@@ -1,0 +1,50 @@
+find -type f -name '[0-9]*' -printf '%f\n'
+find . -type f -name "[0-9]*" -printf "%f\n"
+find . -type f -name '[0-9]*' -exec basename {} \;
+find . -type f -name '[0-9]*' -printf '%f\n'
+basename -s **/[0-9]*
+find . -type f -name "[0-9]*" -exec basename {} \;
+find . -type f -name '[0-9]*' -printf "%f\n"
+find -type f -name "[0-9]*" -printf "%f\n"
+find -type f -printf '%f\n' | grep ^[0-9]
+find . -type f -name "[0-9]*" -printf '%f\n'
+find -type f -name '[0-9]*' -exec basename {} \;
+find -type f -name '[0-9]*' -printf "%f\n"
+find -type f -name "[0-9]*" -exec basename {} \;
+for file in **; do if [[ -f "$file" ]]; then name=${file##*/}; if [[ $name =~ ^[0-9] ]]; then echo "$name"; fi; fi; done
+find . -type f -exec basename {} \; | grep -E '^[0-9]'
+ls -RF | grep -P "^[0-9].*[^/]$"
+find . -type f -printf "%f\n" | grep '^[0-9]'
+find . -type f -printf "%f\n" | grep "^[0-9]"
+find . -type f -printf '%f\n' | grep -E '^[0-9]'
+find -type f -printf "%f\n" | grep ^[0-9]
+find . -type f -printf "%f\n" | grep ^[0-9]
+find . -name '[0-9]*' -type f -printf '%f\n'
+find . -name "[0-9]*" -type f -exec basename {} \;
+find . -type f -name "[0-9]*" | xargs -I{} basename {}
+find -type f -name "[0-9]*" -printf '%f\n'
+find ./ -type f -printf "%f\n" | grep -P '^\d+'
+find . -type f -printf "%f\n" | grep -E '^[0-9]'
+find . -type f -regex '.*/[0-9][^/]*' -printf '%f\n'
+find . -type f -exec basename {} \; | grep -E '^[0-9]+'
+ls -RAp | egrep "^[0-9]+" | grep -v /
+find . -name "[0-9]*" -type f -printf "%f\n"
+find . -type f -printf '%f\n' | grep -P '^\d'
+find . -type f -name '[0-9]*' | sed 's|.*/||'
+find . -type f | sed 's|.*/||' | grep '^[0-9]'
+find . -type f -name '[0-9]*' -printf '%f\n' | sort
+find . -type f -exec basename {} \; | grep '^[0-9]'
+find . -type f -name '[0-9]*' -printf '%f\n' | sort -u
+find -type f -printf '%p\n' | awk -F'/' '$(NF)~/^[0-9]/{print $(NF)}'
+find . -type f | while IFS= read -r line; do basename "$line"; done | grep '^[0-9]'
+find -type f -printf '%f\n' | grep "^[0-9]"
+find -type f -printf '%f\n' | grep '^[0-9]'
+find -type f -name '[0-9]*' -printf '%f\n'
+find . -type f -name "[0-9]"* -printf "%f\n"
+find . -type f -name '[0-9]*' -printf '%f\n'
+find . -type f -name '[0-9]*' -printf "%f\n"
+find . -type f -iname "[0-9]*" -printf "%f\n"
+find . -type f -printf '%f\n' | grep '^[0-9]'
+find . -type f -name "[0-9]*" -exec basename {} \;
+find . -type f -regex '.*/[0-9][^/]*' -printf "%f\n"
+find . -type f -regex '^.*\/[0-9][^/]*$' -printf '%f\n'

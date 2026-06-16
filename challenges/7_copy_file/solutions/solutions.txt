@@ -1,0 +1,50 @@
+cp take-the-command-challenge tmp/files
+cp take-the-command-challenge tmp/files/
+cp take-the-command-challenge tmp/files/take-the-command-challenge
+cp take-the-command-challenge ./tmp/files
+cp "take-the-command-challenge" tmp/files
+cp take-the-command-challenge ./tmp/files/
+cp take-the-command-challenge tmp/files
+cp -r take-the-command-challenge tmp/files
+cp take-the-command-challenge tmp/files
+cp take-the-command-challenge tmp/files/.
+cp ./take-the-command-challenge ./tmp/files
+cp ./take-the-command-challenge tmp/files
+cp take-the-command-challenge mv tmp/files
+cp take-the-command-challenge to tmp/files
+cp 'take-the-command-challenge' tmp/files
+cp t* tmp/files
+cp take-the-command-challenge ./tmp/files/take-the-command-challenge
+touch tmp/files/take-the-command-challenge
+cp take* tmp/files
+cp take-the-command-challenge -t tmp/files
+cp -p take-the-command-challenge tmp/files
+cp "take-the-command-challenge" "tmp/files"
+cp ./take-the-command-challenge ./tmp/files/
+cp "take-the-command-challenge" tmp/files/
+cp take-the-command-challenge -p tmp/files
+cp take-the-command-challenge > tmp/files/take-the-command-challenge
+cp take-the-command-challenge tmp/files
+cp named take-the-command-challenge tmp/files
+cat take-the-command-challenge > tmp/files/take-the-command-challenge
+cp ./take-the-command-challenge ./tmp/files/take-the-command-challenge
+cp take-the-command-challenge / tmp/files
+cp -v take-the-command-challenge tmp/files
+cp -a take-the-command-challenge tmp/files
+cp take-the-command-challenge -r tmp/files
+cp take-the-command-challenge 'tmp/files'
+cp take-the-command-challenge p tmp/files
+cp take-the-command-challenge . tmp/files
+cp ./take-the-command-challenge tmp/files/
+cp ta* tmp/files
+cp take-* tmp/files/
+cp -f take-the-command-challenge tmp/files
+cp -t tmp/files take-the-command-challenge
+cp 'take-the-command-challenge' p tmp/files
+cp take-* tmp/files
+cp take-the-command-challenge "tmp/files"
+cp "take-the-command-challenge" tmp/files
+cp -r take-the-command-challenge tmp/files/
+cp take-the-command-challenge to the directory tmp/files
+cp 'take-the-command-challenge' tmp/files
+cp take-the-command-challenge /var/challenges/copy_file/tmp/files

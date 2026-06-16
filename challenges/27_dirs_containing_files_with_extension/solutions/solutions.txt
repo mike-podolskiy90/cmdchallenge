@@ -1,0 +1,50 @@
+find -type f -name '*.tf' -printf '%h\n' | sort -u
+dirname **/*.tf | sort -u
+find . -type f -name "*.tf" -exec dirname {} \; | sort -u
+find . -type f -name "*.tf" -printf "%h\n" | sort -u
+dirname **/*.tf | uniq
+find . -name "*.tf" -printf "%h\n" | sort -u
+dirname **/*tf | sort -u
+find . -type f -name '*.tf' -exec dirname {} \; | sort -u
+find . -type f -name '*.tf' -printf '%h\n' | sort -u
+find -type f -name "*.tf" -exec dirname {} \; | sort -u
+find . -name "*.tf" -exec dirname {} \; | sort -u
+find . -type f -name "*.tf" -exec dirname {} + | sort -u
+find . -name '*.tf' -exec dirname {} \; | uniq
+find . -type f -name "*.tf" -printf '%h\n' | sort -u
+find -type f -name "*.tf" -exec dirname {} \; | uniq
+find . -type f -name "*.tf" | sed 's|/[^/]*$||' | sort -u
+dirname **/*tf | uniq
+find -type f -name "*.tf" -printf "%h\n" | sort -u
+find . -type f -name "*.tf" -exec dirname {} \; | uniq
+find -type f -name '*.tf' -exec dirname {} \; | uniq
+find . -name "*.tf" -type f -exec dirname {} \; | sort -u
+dirname **/*.tf |sort -u
+ls **/*.tf | sed 's#/[^/]*$##' | sort -u
+find . -type f -name "*.tf" -printf "%h\n" | uniq
+find . -type f -name '*.tf' -exec dirname {} \; | uniq
+for name in $( find -name "*.tf"); do dirname $name; done | sort | uniq
+ls **/*.tf | xargs dirname | sort -u
+find -type f -name "*.tf" -printf '%h\n' | sort -u
+find . -type f -name "*.tf" -exec dirname {} \; | sort | uniq
+dirname **/*.tf|sort -u
+find -name "*.tf" -exec dirname {} \; | uniq
+find . -name "*.tf" -printf '%h\n' | sort -u
+find . -name "*.tf" -exec dirname {} \; | uniq
+find . -name '*.tf' -exec dirname {} \; | sort -u
+find . -name "*.tf" -type f -printf "%h\n" | sort -u
+find -name "*.tf" -printf "%h\n" | uniq
+find -type f -name "*.tf" -printf "%h\n" | uniq
+find . -type f -name "*.tf" | xargs dirname | sort -u
+find . -type f -name '*tf' -exec dirname {} \; | uniq
+find . -name "*.tf" | grep -o '.*/' | rev | cut -c2- | rev | uniq
+ls **/*.tf | sed 's#/[^/]*$##' | uniq
+find -name '*.tf' | xargs dirname | uniq
+find . -name "*.tf" -printf "%h\n" | uniq
+find -name "*.tf" -printf '%h\n' | sort -u
+find . -name '*.tf' -printf '%h\n' | sort -u
+find -type f -name *.tf -printf "%h\n" | sort -u
+find . -type f -name '*.tf' -printf "%h\n" | sort -u
+find . -type f -name '*.tf' -exec dirname {} + | uniq
+find . -type f -name "*.tf" | xargs -n1 dirname | sort -u
+find . -name '*.tf' -exec sh -c 'dirname {}' \; | sort -u

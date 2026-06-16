@@ -1,0 +1,50 @@
+grep -l "500" *
+grep -l 500 *
+grep -l '500' *
+grep -rl "500"
+grep -rl 500
+ls | grep -lr 500
+ls | grep -lr "500"
+grep -lr "500"
+grep -lr 500
+ls | grep -rl "500"
+grep 500 * -l
+grep -l "500" * | xargs -n 1 basename
+grep -rl "500" *
+grep -l "500" * 2>/dev/null
+grep -rl "500" . | xargs -I{} basename {}
+grep "500" * -l
+grep -l "500" *
+grep -ls 500 *
+grep "500" -l *
+ls | grep -l "500" *
+ls | grep -rl 500
+grep 500 -l *
+grep -ls "500" *
+grep -lr "500" *
+grep -r -l "500"
+ls | grep -l 500 *
+grep -l 500 **
+grep -rl '500'
+grep -rl "500" . | xargs -n1 basename
+grep 500 -rl
+grep -lr '500'
+grep -lr 500 *
+grep -rl 500 *
+ls | grep -lR 500
+grep -H -rnw . -e "500" | awk '{print $1}' | cut -d: -f1 | cut -c 3- | sort | uniq
+grep 500 -lr
+ls | grep -l '500' *
+grep "500" -rl
+grep -Rl 500
+grep -lR "500"
+grep -iRl "500"
+grep -l 500 **/*
+ls | grep -rl '500'
+ls -l | grep -lr "500"
+grep -l 500 *
+grep "500" -lr
+ls |grep -lr "500"
+grep -l "500" * | xargs -n1 basename
+grep -l "500" ./* 2>/dev/null | xargs -n1 basename
+grep -Ril 500
