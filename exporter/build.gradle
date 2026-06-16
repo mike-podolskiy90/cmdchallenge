@@ -15,5 +15,5 @@ dependencies {
 }
 
 application {
-    mainClass = 'CmdChallengeExporter'
+    mainClass = 'ChallengeExporter'
 }
